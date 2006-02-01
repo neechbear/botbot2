@@ -7,7 +7,8 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 	return if $event->{alarm};
 
-	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug') {
+	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug' &&
+			$event->{person} =~ /^heds|jen|neech$/i) {
 		while (my ($plugin,$response) = each %{$responded}) {
 			$self->{talker}->whisper($event->{person},
 					"$plugin responded: $response\n");
