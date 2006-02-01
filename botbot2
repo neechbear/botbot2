@@ -13,7 +13,6 @@ use plugin;
 use Module::Pluggable(
 		search_dirs => [ "$Bin/plugin" ],
 		search_path => [ "plugin" ],
-		except      => [ qw(plugin) ],
 		instantiate => 'new',
 	);
 
@@ -60,8 +59,10 @@ sub event_callback {
 
 	my %plugins_responded = ();
 	for my $plugin (sort(load_plugins())) {
-		my $response = $plugin->handle($event, \%plugins_responded);
-		$plugins_responded{ref($plugin)} = $response if $response;
+		eval {
+			my $response = $plugin->handle($event, \%plugins_responded);
+			$plugins_responded{ref($plugin)} = $response if $response;
+		};
 	}
 
 	return 0;
@@ -69,7 +70,7 @@ sub event_callback {
 
 sub load_plugins {
 	if ($LAST_LOADED) {
-		for (grep(!/\/plugin\.pm$/,glob("$dirname/plugin/*.pm"))) {
+		for (glob("$dirname/plugin/*.pm")) {
 			if ((stat($_))[9] > $LAST_LOADED) {
 				@PLUGIN_CACHE = ();
 				if ($_ =~ m#/(plugin/\w+\.pm)$#) {
