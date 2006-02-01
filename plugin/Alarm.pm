@@ -7,6 +7,8 @@ sub handle {
 	if ($event->{'alarm'}) {
 		# I'm not actually doing anything really
 		warn "ALARM\n";
+		#use Data::Dumper;
+		#warn Dumper(\%INC);
 	}
 	return 0;
 }
