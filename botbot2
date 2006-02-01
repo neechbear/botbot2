@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/home/nicolaw/webroot/perl-5.8.7/bin/perl
 # vim:ts=4:sw=4:tw=78
 
 use 5.8.5;
@@ -7,17 +7,21 @@ use warnings;
 no warnings qw(redefine);
 
 use FindBin qw($Bin);
-use Colloquy::Bot::Simple qw(daemonize);
-use Module::Pluggable qw();
-use File::Basename qw(fileparse);
-use Config::General qw();
+use lib "$Bin/plugin";
+use plugin;
+
 use Module::Pluggable(
-		search_path => [ "$Bin/plugins" ],
+		search_dirs => [ "$Bin/plugin" ],
+		search_path => [ "plugin" ],
+		except      => [ qw(plugin) ],
 		instantiate => 'new',
-		sub_name => 'plugins',
 	);
 
-use vars qw($VERSION $SELF);
+use Colloquy::Bot::Simple qw(daemonize);
+use File::Basename qw(fileparse);
+use Config::General qw();
+
+use vars qw($VERSION $SELF @PLUGIN_CACHE);
 
 ($SELF = $0) =~ s|^.*/||;
 $VERSION = sprintf('%d.%02d', q$Revision: 1.27 $ =~ /(\d+)/g);
@@ -41,8 +45,7 @@ alarm 0;
 daemonize("/tmp/$SELF.pid",1) if @ARGV && $ARGV[0] =~ /^-d|--daemon$/i;
 chdir($Bin) || die "Unable to change directory to $Bin: $!";
 
-our @plugins = ();
-$talker->listenLoop(\&event_callback, 60);
+$talker->listenLoop(\&event_callback, 10);
 $talker->quit;
 
 exit;
@@ -55,28 +58,24 @@ sub event_callback {
 	my $talker = shift;
 	my $event = @_ % 2 ? { alarm => 1 } : { @_ };
 
-	dynaload_plugings();
-
-	if (exists $event->{alarm}) {
-		print "Callback called as ALARM interrupt handler\n";
-		$talker->whisper('@Public', 'pook');
-
-	} elsif ($event->{msgtype} eq 'TELL') {
-		$talker->whisper($event->{person}, 'piss off');
+	my @plugins_responded = ();
+	for my $plugin (load_plugins()) {
+		my $response = $plugin->handle(
+						$event, 
+						plugins_responded => \@plugins_responded,
+					);
+		push(@plugins_responded, $response) if $response;
 	}
 
 	return 0;
 }
 
-
-dynaload_plugings {
-
+sub load_plugins {
+	if (!@PLUGIN_CACHE) {
+		@PLUGIN_CACHE = __PACKAGE__->plugins(talker => $talker);
+	}
+	warn "Plugin ".ref($_)." is loaded\n" for @PLUGIN_CACHE;
+	return @PLUGIN_CACHE;
 }
-
-1;
-
-__END__
-
-
 
 
