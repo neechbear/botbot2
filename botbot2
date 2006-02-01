@@ -58,13 +58,10 @@ sub event_callback {
 	my $talker = shift;
 	my $event = @_ % 2 ? { alarm => 1 } : { @_ };
 
-	my @plugins_responded = ();
-	for my $plugin (load_plugins()) {
-		my $response = $plugin->handle(
-						$event, 
-						plugins_responded => \@plugins_responded,
-					);
-		push(@plugins_responded, $response) if $response;
+	my %plugins_responded = ();
+	for my $plugin (sort(load_plugins())) {
+		my $response = $plugin->handle($event, \%plugins_responded);
+		$plugins_responded{ref($plugin)} = $response if $response;
 	}
 
 	return 0;
@@ -73,8 +70,8 @@ sub event_callback {
 sub load_plugins {
 	if (!@PLUGIN_CACHE) {
 		@PLUGIN_CACHE = __PACKAGE__->plugins(talker => $talker);
+		warn "Loaded plugin ".ref($_)."\n" for sort(@PLUGIN_CACHE);
 	}
-	warn "Plugin ".ref($_)." is loaded\n" for @PLUGIN_CACHE;
 	return @PLUGIN_CACHE;
 }
 
