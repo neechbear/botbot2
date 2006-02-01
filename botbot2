@@ -80,11 +80,14 @@ sub load_plugins {
 		}
 	}
 	if (!@PLUGIN_CACHE) {
-		$LAST_LOADED = time;
-		@PLUGIN_CACHE = __PACKAGE__->plugins(
-						talker => $talker,
-						root => $dirname,
-					);
+		eval {
+			@PLUGIN_CACHE = __PACKAGE__->plugins(
+							talker => $talker,
+							root => $dirname,
+							logfile => "$dirname/logs/$config{username}.log",
+						);
+		};
+		$LAST_LOADED = time unless $@;
 		warn "Loaded plugin ".ref($_)."\n" for sort(@PLUGIN_CACHE);
 	}
 	return @PLUGIN_CACHE;
