@@ -7,7 +7,7 @@ sub handle {
 	return if $event->{alarm};
 	$self->{talker}->whisper(
 			$event->{list} ? $event->{list} : $event->{person},
-			"Hello $event->{person}",
+			"Hello $event->{person}, you slag!",
 		);
 	return "I spoke";
 }

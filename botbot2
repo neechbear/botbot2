@@ -21,7 +21,7 @@ use Colloquy::Bot::Simple qw(daemonize);
 use File::Basename qw(fileparse);
 use Config::General qw();
 
-use vars qw($VERSION $SELF @PLUGIN_CACHE);
+use vars qw($VERSION $SELF @PLUGIN_CACHE $LAST_LOADED);
 
 ($SELF = $0) =~ s|^.*/||;
 $VERSION = sprintf('%d.%02d', q$Revision: 1.27 $ =~ /(\d+)/g);
@@ -68,8 +68,23 @@ sub event_callback {
 }
 
 sub load_plugins {
+	if ($LAST_LOADED) {
+		for (grep(!/\/plugin\.pm$/,glob("$dirname/plugin/*.pm"))) {
+			if ((stat($_))[9] > $LAST_LOADED) {
+				@PLUGIN_CACHE = ();
+				if ($_ =~ m#/(plugin/\w+\.pm)$#) {
+					warn "Unloading modified plugin $1\n";
+					delete $INC{$1};
+				}
+			}
+		}
+	}
 	if (!@PLUGIN_CACHE) {
-		@PLUGIN_CACHE = __PACKAGE__->plugins(talker => $talker);
+		$LAST_LOADED = time;
+		@PLUGIN_CACHE = __PACKAGE__->plugins(
+						talker => $talker,
+						root => $dirname,
+					);
 		warn "Loaded plugin ".ref($_)."\n" for sort(@PLUGIN_CACHE);
 	}
 	return @PLUGIN_CACHE;
