@@ -7,15 +7,15 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 	return if $event->{alarm};
 
-	if ($event->{type} eq 'TELL' && $event->{command} eq 'debug') {
+	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug') {
 		while (my ($plugin,$response) = each %{$responded}) {
 			$self->{talker}->whisper($event->{person},
 					"$plugin responded: $response\n");
 		}
 
 		for ($self,$event,$responded) {
-			$self->{talker}->whisper($event->{person},
-					Dumper($_));
+			$self->{talker}->whisper($event->{person},$_)
+				for split(/\n/,Dumper($_));
 		}
 	}
 
