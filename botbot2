@@ -44,6 +44,7 @@ alarm 0;
 daemonize("/tmp/$SELF.pid",1) if @ARGV && $ARGV[0] =~ /^-d|--daemon$/i;
 chdir($Bin) || die "Unable to change directory to $Bin: $!";
 
+$talker->say('.observe Public');
 $talker->listenLoop(\&event_callback, 10);
 $talker->quit;
 

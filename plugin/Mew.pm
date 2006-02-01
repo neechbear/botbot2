@@ -6,15 +6,21 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
+	return undef unless int(rand(3)) == 2;
 	return unless $event->{command} =~ /^(mews?\s*)+\b/i ||
 					$event->{command} =~ /^(mews?\s*)+$/i;
 
-	return 0 if int(rand(2)) == 1;
-
-	$self->{talker}->whisper(
-			$event->{list} ? $event->{list} : $event->{person},
-			'mew',
-		);
+	if (int(rand(3)) == 2) {
+		$self->{talker}->say(
+				($event->{list} !~ /\@/ ? "<<$event->{list}" : '<@Public')." ".
+				"purrs"
+			);
+	} else {
+		$self->{talker}->say(
+				($event->{list} !~ /\@/ ? ">>$event->{list}" : '>@Public')." ".
+				"mew"
+			);
+	}
 
 	return "mewed like a cat";
 }

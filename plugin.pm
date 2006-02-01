@@ -14,9 +14,14 @@ sub handle {
 
 sub log {
 	my $self = shift;
-	my $fh = FileHandle->new($self->{logfile},O_WRONLY|O_APPEND);
+	my $fh = FileHandle->new(">>$self->{logfile}");
 	if (defined $fh) {
-		print $fh "@_";
+		my $str = "@_"; chomp $str;
+		my ($sec,$min,$hour,$mday,$mon,$year) = localtime;
+		printf $fh "[%04d-%02d-%02d %02d:%02d:%02d] %s\n",
+				$year+1900, $mon+1, $mday,
+				$hour, $min, $sec,
+				$str;
 		$fh->close;
 	} else {
 		warn "Unable to open logfile $self->{logfile} for writing: $!";
