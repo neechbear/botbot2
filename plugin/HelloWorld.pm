@@ -5,6 +5,8 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 	return if $event->{alarm};
+	return unless $event->{command} =~ /hello/i;
+
 	$self->{talker}->whisper(
 			$event->{list} ? $event->{list} : $event->{person},
 			"Hello $event->{person}, you slag!",
