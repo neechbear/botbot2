@@ -1,14 +1,22 @@
+package plugin::OnTV;
+use base plugin;
+use strict;
+use XML::Simple;
 
-sub _ontv {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
 
-	return 0 unless length($event->{args}->[0]);
-	pop @{$event->{args}} if $event->{list};
-	my $str = join(' ',@{$event->{args}});
+	return if $event->{alarm};
+	return unless $event->{command} =~ /^ontv$/i;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+
+	my $talker = $self->{talker};
+
+	return 0 unless length($event->{cmdargs}->[0]);
+	my $str = join(' ',@{$event->{cmdargs}});
 
 	my $xs = new XML::Simple();
-	my $listings = $xs->XMLin("$ROOT/data/blebtv/data.xml",
+	my $listings = $xs->XMLin("../data/blebtv/data.xml",
 						ForceArray => 1, KeyAttr => 'key');
 
 	my %channels;
@@ -67,4 +75,6 @@ sub _ontv {
 
 	return 0;
 }
+
+1;
 

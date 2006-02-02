@@ -7,7 +7,7 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
-	return unless $event->{msgtype} =~ /OBSERVE TALK|TALK|LISTTALK|TELL/;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 
 	return _exchange($event->{talker},$event) if $event->{command} =~ /exchange/i;
 	return _currencies($event->{talker},$event) if $event->{command} =~ /currencies/i;
@@ -18,6 +18,11 @@ sub handle {
 sub _exchange {
 	my ($talker,$event) = @_;
 	my @arg = @{$event->{cmdargs}};
+
+use Data::Dumper;
+warn Dumper($event);
+
+warn "HERE IN _exchange";
 
 	my $obj = Finance::Currency::Convert::XE->new()       
 				|| die "Failed to create object\n" ;
@@ -68,13 +73,18 @@ sub _exchange {
 				$event->{person},
 				"I failed to convert $value $source in to $target; sorry\n"
 			);
+		return 0;
 	}
 
-	return 0;
 }
 
 sub _currencies {
 	my ($talker,$event) = @_;
+
+use Data::Dumper;
+warn Dumper($event);
+
+warn "HERE IN _currencies";
 
 	my $obj = Finance::Currency::Convert::XE->new()       
 				|| die "Failed to create object\n" ;

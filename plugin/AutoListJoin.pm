@@ -5,6 +5,8 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
+	$self->{countdown} = 1 unless defined($self->{countdown});
+
 	if ($event->{alarm}) {
 		$self->{countdown} ||= 100;
 		$self->{countdown}--;

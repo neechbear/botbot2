@@ -1,10 +1,19 @@
+package plugin::Iana;
+use base plugin;
+use strict;
+use Net::Whois::IANA;
 
-sub _iana {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
 
-	return 0 unless length($event->{args}->[0]) && isIP($event->{args}->[0]);
-	my $ip = $event->{args}->[0];
+	return if $event->{alarm};
+	return unless $event->{command} =~ /^iana|whois$/i;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+
+	my $talker = $self->{talker};
+
+	return 0 unless length($event->{cmdargs}->[0]) && isIP($event->{cmdargs}->[0]);
+	my $ip = $event->{cmdargs}->[0];
 
 	eval {
 		my $iana = new Net::Whois::IANA;
@@ -23,8 +32,11 @@ sub _iana {
 				($event->{list} ? $event->{list} : $event->{person}),
 				$_
 			) for @reply;
+		return "Returned a Net::Whois::IANA for $ip";
 	};
 
 	return 0;
 }
+
+1;
 

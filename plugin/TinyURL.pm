@@ -1,7 +1,20 @@
+package plugin::HelloWorld;
+use base plugin;
+use strict;
+use LWP::UserAgent;
+use HTML::Entities;
+use HTML::Strip;
+use Image::Info;
+use File::Type;
+use Socket;
 
-sub _tinyurl {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
+
+	return if $event->{alarm};
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|OBSERVE EMOTE|EMOTE|TALK|TELL|LISTEMOTE|LISTTALK$/;
+
+	my $talker = $self->{talker};
 
 	# Extract the URL from what they said
 	my $url = '';
@@ -50,7 +63,7 @@ sub _tinyurl {
 		);
 
 	# Write the URL to our log
-	if (open(FH, ">>$ROOT/logs/url.log")) {
+	if (open(FH, "../data/url.log")) {
 		$title =~ s/\s+/ /g;
 		$title = '' if $title eq '[No title information available]';
 		$shorturl = '' if $shorturl eq $url;
@@ -58,7 +71,7 @@ sub _tinyurl {
 			time(), $event->{person}, $url, $shorturl, $event->{list}, $title);
 		close(FH);
 	} else {
-		warn "Unable to open file handle FH for file '$ROOT/logs/url.log': $!";
+		warn "Unable to open file handle FH for file '../data/url.log': $!";
 	}
 
 	return 0;
@@ -177,4 +190,6 @@ sub host2ip {
 		return $host;
 	}
 }
+
+1;
 

@@ -1,7 +1,17 @@
+package plugin::IMDB;
+use base plugin;
+use strict;
+use HTML::Strip;
+use LWP::UserAgent;
 
-sub _imdbquote {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
+
+	return if $event->{alarm};
+	return unless $event->{command} =~ /^imdb|imdbquote|movie|moviequote$/i;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+
+	my $talker = $self->{talker};
 
 	# Create an LWP object to work with
 	my $ua = LWP::UserAgent->new(
@@ -11,11 +21,10 @@ sub _imdbquote {
 
 	# Get the IMDB ID reference
 	my $id;
-	if (defined $event->{args}->[0] && $event->{args}->[0] =~ /^\d{7}$/) {
-		$id = $event->{args}->[0];
+	if (defined $event->{cmdargs}->[0] && $event->{cmdargs}->[0] =~ /^\d{7}$/) {
+		$id = $event->{cmdargs}->[0];
 	} else {
-		pop @{$event->{args}} if $event->{list};
-		my ($popular,@matches) = searchIMDB(join(' ', @{$event->{args}}));
+		my ($popular,@matches) = searchIMDB(join(' ', @{$event->{cmdargs}}));
 		warn $_ for @matches;
 		if (@matches && $matches[0] =~ /\s*(\d{7})\s*/) {
 			$id = $1;
@@ -69,8 +78,8 @@ sub _imdb {
 	my $event = { @_ };
 
 	# Lookup a specific IMDB ID reference
-	if (defined $event->{args}->[0] && $event->{args}->[0] =~ /^\d{7}$/) {
-		my $id = $event->{args}->[0];
+	if (defined $event->{cmdargs}->[0] && $event->{cmdargs}->[0] =~ /^\d{7}$/) {
+		my $id = $event->{cmdargs}->[0];
 		my $movie = IMDB::Movie->new($id);
 
 		my @reply;
@@ -110,8 +119,7 @@ sub _imdb {
 
 	# Search for titles
 	} else {
-		pop @{$event->{args}} if $event->{list};
-		my ($recLimit,@matches) = searchIMDB(join(' ', @{$event->{args}}));
+		my ($recLimit,@matches) = searchIMDB(join(' ', @{$event->{cmdargs}}));
 		$recLimit = 3 if $recLimit < 3;
 
 		unless (@matches) {
@@ -170,4 +178,6 @@ sub searchIMDB {
 
 	return undef;
 }
+
+1;
 

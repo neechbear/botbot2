@@ -1,17 +1,24 @@
+package plugin::HelloWorld;
+use base plugin;
+use strict;
 
-sub _traceroute {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
 
-	return 0 unless length($event->{args}->[0]);
-	pop @{$event->{args}} if $event->{list};
-	my $ip = isIP($event->{args}->[0]) ? $event->{args}->[0] :
-				(host2ip($event->{args}->[0]))[0];
+	return if $event->{alarm};
+	return unless $event->{command} =~ /^traceroute|tracert$/i;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+
+	my $talker = $self->{talker};
+
+	return 0 unless length($event->{cmdargs}->[0]);
+	my $ip = isIP($event->{cmdargs}->[0]) ? $event->{cmdargs}->[0] :
+				(host2ip($event->{cmdargs}->[0]))[0];
 
 	unless (isIP($ip)) {
 		$talker->whisper(
 				$event->{person},
-				"Sorry; $event->{args}->[0] isn't a valid host/IP"
+				"Sorry; $event->{cmdargs}->[0] isn't a valid host/IP"
 			);
 		return 0;
 	}
@@ -32,4 +39,6 @@ sub _traceroute {
 
 	return 0;
 }
+
+1;
 

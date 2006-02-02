@@ -1,15 +1,22 @@
+package plugin::Remember;
+use base plugin;
+use strict;
 
-sub _remember {
-	my $talker = shift;
-	my $event = { @_ };
+sub handle {
+	my ($self,$event,$responded) = @_;
 
-	return 0 unless length($event->{args}->[0]);
-	pop @{$event->{args}} if $event->{list};
-	my $str = join(' ',@{$event->{args}});
+	return if $event->{alarm};
+	return unless $event->{command} =~ /^remember$/i;
+	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+
+	my $talker = $self->{talker};
+
+	return 0 unless length($event->{cmdargs}->[0]);
+	my $str = join(' ',@{$event->{cmdargs}});
 	$str =~ s/\s+/\.\*/g;
 
 	my @reply;
-	if (open(URL,"<$ROOT/logs/url.log")) {
+	if (open(URL,"../data/url.log")) {
 		while (local $_ = <URL>) {
 			chomp;
 			if (/$str/i) {
@@ -36,4 +43,6 @@ sub _remember {
 
 	return 0;
 }
+
+1;
 
