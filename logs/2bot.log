@@ -233,3 +233,199 @@
 [2006-02-02 13:43:10] TELL Heds        >version
 [2006-02-02 13:43:14] TELL Heds        >debug
 [2006-02-02 13:43:19] OBSERVED Public TALK Sully       @Heds> What's Bob written? {@Public}
+[2006-02-02 13:43:29] OBSERVED Public TALK Heds        @Colloquy? {@Public}
+[2006-02-02 13:44:46] OBSERVED Public TALK tims        @"But it will still poo wherever it wants! Damn it! Pooing and spreading disease! ;-) {@Public}
+[2006-02-02 13:44:52] OBSERVED Public TALK tims        @" -- colleague in a flap about mice {@Public}
+[2006-02-02 14:00:05] plugin::Exchange was called
+[2006-02-02 14:00:15] plugin::Exchange was called
+[2006-02-02 14:00:25] plugin::Exchange was called
+[2006-02-02 14:00:35] plugin::Exchange was called
+[2006-02-02 14:00:45] plugin::Exchange was called
+[2006-02-02 14:00:55] plugin::Exchange was called
+[2006-02-02 14:01:05] plugin::Exchange was called
+[2006-02-02 14:01:15] plugin::Exchange was called
+[2006-02-02 14:01:25] plugin::Exchange was called
+[2006-02-02 14:01:35] plugin::Exchange was called
+[2006-02-02 14:01:45] plugin::Exchange was called
+[2006-02-02 14:01:55] plugin::Exchange was called
+[2006-02-02 14:02:05] plugin::Exchange was called
+[2006-02-02 14:02:15] plugin::Exchange was called
+[2006-02-02 14:02:25] plugin::Exchange was called
+[2006-02-02 14:02:36] plugin::Exchange was called
+[2006-02-02 14:02:46] plugin::Exchange was called
+[2006-02-02 14:02:56] plugin::Exchange was called
+[2006-02-02 14:03:06] plugin::Exchange was called
+[2006-02-02 14:03:16] plugin::Exchange was called
+[2006-02-02 14:03:26] plugin::Exchange was called
+[2006-02-02 14:03:36] plugin::Exchange was called
+[2006-02-02 14:03:46] plugin::Exchange was called
+[2006-02-02 14:03:56] plugin::Exchange was called
+[2006-02-02 14:04:06] plugin::Exchange was called
+[2006-02-02 14:04:17] plugin::Exchange was called
+[2006-02-02 14:04:27] plugin::Exchange was called
+[2006-02-02 14:04:37] plugin::Exchange was called
+[2006-02-02 14:04:47] plugin::Exchange was called
+[2006-02-02 14:04:57] plugin::Exchange was called
+[2006-02-02 14:05:07] plugin::Exchange was called
+[2006-02-02 14:05:17] plugin::Exchange was called
+[2006-02-02 14:05:27] plugin::Exchange was called
+[2006-02-02 14:05:37] plugin::Exchange was called
+[2006-02-02 14:05:47] plugin::Exchange was called
+[2006-02-02 14:05:57] plugin::Exchange was called
+[2006-02-02 14:06:07] plugin::Exchange was called
+[2006-02-02 14:06:17] plugin::Exchange was called
+[2006-02-02 14:06:27] plugin::Exchange was called
+[2006-02-02 14:06:37] plugin::Exchange was called
+[2006-02-02 14:06:47] plugin::Exchange was called
+[2006-02-02 14:06:57] plugin::Exchange was called
+[2006-02-02 14:07:07] plugin::Exchange was called
+[2006-02-02 14:07:17] plugin::Exchange was called
+[2006-02-02 14:07:27] plugin::Exchange was called
+[2006-02-02 14:07:37] plugin::Exchange was called
+[2006-02-02 14:07:47] plugin::Exchange was called
+[2006-02-02 14:07:57] plugin::Exchange was called
+[2006-02-02 14:08:07] plugin::Exchange was called
+[2006-02-02 14:08:17] plugin::Exchange was called
+[2006-02-02 14:08:27] plugin::Exchange was called
+[2006-02-02 14:08:37] plugin::Exchange was called
+[2006-02-02 14:08:47] plugin::Exchange was called
+[2006-02-02 14:08:57] plugin::Exchange was called
+[2006-02-02 14:09:07] plugin::Exchange was called
+[2006-02-02 14:09:17] plugin::Exchange was called
+[2006-02-02 14:09:27] plugin::Exchange was called
+[2006-02-02 14:09:37] plugin::Exchange was called
+[2006-02-02 14:09:47] plugin::Exchange was called
+[2006-02-02 14:09:57] plugin::Exchange was called
+[2006-02-02 14:10:07] plugin::Exchange was called
+[2006-02-02 14:10:17] plugin::Exchange was called
+[2006-02-02 14:10:27] plugin::Exchange was called
+[2006-02-02 14:10:37] plugin::Exchange was called
+[2006-02-02 14:10:47] plugin::Exchange was called
+[2006-02-02 14:10:57] plugin::Exchange was called
+[2006-02-02 14:11:07] plugin::Exchange was called
+[2006-02-02 14:11:17] plugin::Exchange was called
+[2006-02-02 14:11:27] plugin::Exchange was called
+[2006-02-02 14:11:37] plugin::Exchange was called
+[2006-02-02 14:11:47] plugin::Exchange was called
+[2006-02-02 14:11:57] plugin::Exchange was called
+[2006-02-02 14:12:07] plugin::Exchange was called
+[2006-02-02 14:12:17] plugin::Exchange was called
+[2006-02-02 14:12:27] plugin::Exchange was called
+[2006-02-02 14:12:37] plugin::Exchange was called
+[2006-02-02 14:12:47] plugin::Exchange was called
+[2006-02-02 14:12:57] plugin::Exchange was called
+[2006-02-02 14:13:07] plugin::Exchange was called
+[2006-02-02 14:13:17] plugin::Exchange was called
+[2006-02-02 14:13:37] plugin::Exchange was called but has handle() method
+[2006-02-02 14:13:47] plugin::Exchange was called but has handle() method
+[2006-02-02 14:13:57] plugin::Exchange was called but has handle() method
+[2006-02-02 14:14:07] plugin::Exchange was called but has handle() method
+[2006-02-02 14:14:17] plugin::Exchange was called but has handle() method
+[2006-02-02 14:14:50] TELL neech       >exchange usd
+[2006-02-02 14:15:04] TELL neech       >currencies
+[2006-02-02 14:15:12] LISTTALK neech       %currencies {Masters}
+[2006-02-02 14:15:17] LISTTALK neech       %exchange usd {Masters}
+[2006-02-02 14:16:20] LISTTALK neech       %exchange usd {Masters}
+[2006-02-02 14:16:28] LISTTALK neech       %currencies {Masters}
+[2006-02-02 14:16:29] LISTTALK neech       %currencies {Masters}
+[2006-02-02 14:16:30] LISTTALK neech       %currencies {Masters}
+[2006-02-02 14:16:50] LISTTALK neech       %exchange usd {Masters}
+[2006-02-02 14:17:24] LISTTALK neech       %exchange usd {Masters}
+[2006-02-02 14:17:53] OBSERVED Public TALK tims        @I can't see the appeal. There again, urbandictionary's defn of sex isn't exactly enticing either {@Public}
+[2006-02-02 14:17:57] LISTTALK Heds        %cool :) {Masters}
+[2006-02-02 14:18:15] LISTTALK neech       %i haven't perfected the conversion yet {Masters}
+[2006-02-02 14:18:23] LISTTALK neech       %it's still not responding on currencies or exchange {Masters}
+[2006-02-02 14:18:25] LISTTALK neech       %oh well {Masters}
+[2006-02-02 14:18:31] LISTTALK Heds        %hm {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %nicolaw@arwen:~/svn/botbot2 $ ./botbot2 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %[Thu Feb  2 14:17:19 2006] [Trying to connect directly to <85.158.42.201>:<1236>] {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %[Thu Feb  2 14:17:19 2006] [Logged in successfully!] {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::Iana : plugin/Iana.pm did not return a true value at (eval 18) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::TinyURL : plugin/TinyURL.pm did not return a true value at (eval 19) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::Remember : plugin/Remember.pm did not return a true value at (eval 20) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::IMDB : plugin/IMDB.pm did not return a true value at (eval 26) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::OnTV : plugin/OnTV.pm did not return a true value at (eval 28) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::Google : plugin/Google.pm did not return a true value at (eval 29) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::Dict : plugin/Dict.pm did not return a true value at (eval 31) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Couldn't require plugin::Traceroute : plugin/Traceroute.pm did not return a true value at (eval 32) line 3, <GEN1> line 26. {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       % at ./botbot2 line 90 {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::Alarm {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::Exchange {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::HelloWorld {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::Log {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::Mew {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::Urban {Masters}
+[2006-02-02 14:18:31] LISTTALK neech       %Loaded plugin plugin::ZZZDumper {Masters}
+[2006-02-02 14:18:33] LISTTALK neech       % :) {Masters}
+[2006-02-02 14:18:40] LISTEMOTE % Heds grins {Masters}
+[2006-02-02 14:18:41] LISTTALK neech       %i'll work on that tonight i guess {Masters}
+[2006-02-02 14:19:04] LISTTALK Heds        %"true" {Masters}
+[2006-02-02 14:19:06] LISTEMOTE % Heds coughs {Masters}
+[2006-02-02 14:19:08] LISTTALK neech       %heh {Masters}
+[2006-02-02 14:20:05] LISTTALK Heds        %Sorry, I'm interested, I've just got a lot to prepare for a phone call later. Hence being brief {Masters}
+[2006-02-02 14:38:17] TELL neech       >debug 10
+[2006-02-02 14:38:24] LISTTALK neech       %hrm {Masters}
+[2006-02-02 14:38:25] OBSERVED Public TALK Flux        @That's what you think. {@Public}
+[2006-02-02 14:38:29] OBSERVED Public TALK Flux        @Bwhhhahahahhaahhahaha. {@Public}
+[2006-02-02 14:38:32] LISTINVITE neech invites you to %foo2.  To respond, type .list join foo2
+[2006-02-02 14:38:32] LISTJOIN 2bot has joined the list. {foo2}
+[2006-02-02 14:38:38] LISTTALK Heds        %I will keep pestering you about food every 5 mins now, if you don't eat something. Until you either mute or kick me {Masters}
+[2006-02-02 14:38:42] LISTEMOTE % neech grins {Masters}
+[2006-02-02 14:38:44] LISTTALK Heds        %So. Food. {Masters}
+[2006-02-02 14:38:48] LISTTALK Heds        %Get some :) {Masters}
+[2006-02-02 14:38:50] LISTTALK neech       %i improved the debug command {Masters}
+[2006-02-02 14:38:52] LISTTALK neech       %lots {Masters}
+[2006-02-02 14:38:54] TELL Heds        >debug
+[2006-02-02 14:39:01] LISTTALK neech       %you can do debug on its own {Masters}
+[2006-02-02 14:39:12] LISTTALK neech       %and it'll just send you the debug for that actual event trigger {Masters}
+[2006-02-02 14:39:12] LISTTALK neech       %or {Masters}
+[2006-02-02 14:39:15] LISTTALK neech       %debug N {Masters}
+[2006-02-02 14:39:20] LISTTALK Heds        %bless()? {Masters}
+[2006-02-02 14:39:26] LISTTALK neech       %and it'll send you the debug for the next N event triggers {Masters}
+[2006-02-02 14:39:29] TELL Heds        >debug 5
+[2006-02-02 14:39:36] LISTTALK neech       %regardless of who or what triggered them {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >$VAR1 = { {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'args' => [ {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                      'Get', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                      'some', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                      ':)' {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                    ], {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'msgtype' => 'LISTTALK', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'raw2' => 'Heds        %Get some :) {Masters}', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'text' => 'Get some :)', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'person' => 'Heds', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'cmdargs' => [ {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                         'some', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                         ':)' {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >                       ], {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'alarm' => 0, {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'respond' => undef, {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'command' => 'Get', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'list' => '%Masters', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'spoken' => 'Get some :)', {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >          'raw' => 'LISTTALK Heds        %Get some :) {Masters}' {Masters}
+[2006-02-02 14:39:46] LISTTALK neech       %[14:38]  2bot        >        }; {Masters}
+[2006-02-02 14:39:50] LISTTALK neech       %try it {Masters}
+[2006-02-02 14:39:52] LISTTALK Heds        %I am {Masters}
+[2006-02-02 14:39:53] LISTTALK neech       % >2bot debug 4 {Masters}
+[2006-02-02 14:39:55] LISTTALK neech       %heh {Masters}
+[2006-02-02 14:39:56] LISTTALK neech       %clever {Masters}
+[2006-02-02 14:39:58] LISTTALK Heds        %I can see you talking in events :) {Masters}
+[2006-02-02 14:40:20] LISTTALK Heds        %That is nice. Lock yourself away and watch what it's doing {Masters}
+[2006-02-02 14:40:30] LISTTALK neech       %heh {Masters}
+[2006-02-02 14:40:44] LISTTALK Heds        %Let's you get a good handle on how it's behaving {Masters}
+[2006-02-02 14:40:46] LISTTALK neech       %i might change it so you can get different types of dumps {Masters}
+[2006-02-02 14:40:56] LISTTALK neech       %it dumps you: it's own object {Masters}
+[2006-02-02 14:41:04] LISTTALK neech       %the event hash reference {Masters}
+[2006-02-02 14:41:16] LISTTALK neech       %and the "which plugins did what" already hash ref {Masters}
+[2006-02-02 14:41:26] LISTTALK neech       %so it you do >2bot hello {Masters}
+[2006-02-02 14:41:28] TELL neech       >hello
+[2006-02-02 14:41:43] LISTTALK neech       %the last reference in that debug output will say that the HelloWorld plugin said hello :) {Masters}
+[2006-02-02 14:41:53] LISTTALK neech       %so plugins are aware of who's doing what before them {Masters}

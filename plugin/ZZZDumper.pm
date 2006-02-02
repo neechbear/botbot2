@@ -9,15 +9,26 @@ sub handle {
 
 	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug' &&
 			$event->{person} =~ /^heds|jen|neech$/i) {
+		if (defined $event->{cmdargs}->[0] &&
+				$event->{cmdargs}->[0] =~ /^[1-9][0-9]*$/) {
+			$self->{debug_counter} = $event->{cmdargs}->[0];
+		}
+		$self->{debug_counter} ||= 1;
+		$self->{debug_person} = $event->{person};
+	}
+
+	if (defined $self->{debug_counter} && $self->{debug_counter}) {
 		while (my ($plugin,$response) = each %{$responded}) {
-			$self->{talker}->whisper($event->{person},
+			$self->{talker}->whisper($self->{debug_person},
 					"$plugin responded: $response\n");
 		}
 
 		for ($self,$event,$responded) {
-			$self->{talker}->whisper($event->{person},$_)
+			$self->{talker}->whisper($self->{debug_person},$_)
 				for split(/\n/,Dumper($_));
 		}
+
+		$self->{debug_counter}--;
 	}
 
 	# Shhh, I didn't do anything - honest.
