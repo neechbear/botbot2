@@ -6,6 +6,7 @@ use Data::Dumper;
 sub handle {
 	my ($self,$event,$responded) = @_;
 	return if $event->{alarm};
+	return if $event->{msgtype} =~ /^DONE/;
 
 	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug' &&
 			$event->{person} =~ /^heds|jen|neech$/i) {
@@ -23,7 +24,8 @@ sub handle {
 					"$plugin responded: $response\n");
 		}
 
-		for ($self,$event,$responded) {
+		#for ($self,$event,$responded) {
+		for ($event) {
 			$self->{talker}->whisper($self->{debug_person},$_)
 				for split(/\n/,Dumper($_));
 		}

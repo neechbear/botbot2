@@ -5,12 +5,22 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
-	return unless ($event->{msgtype} eq 'LISTINVITE' && defined($event->{respond}));
+	if ($event->{alarm}) {
+		$self->{countdown} ||= 100;
+		$self->{countdown}--;
+		if ($self->{countdown} == 0) {
+			$self->{talker}->say('.lists');
+		}
 
-	$self->{talker}->say($event->{respond});
+	} elsif ($event->{msgtype} eq 'LISTS') {
+		for my $list (grep(!/^\*/,@{$event->{args}})) {
+			$self->{talker}->say(".list join $list");
+		}
 
-	return "Auto-joined a list with: $event->{respond}";
+	} elsif ($event->{msgtype} eq 'LISTINVITE' && defined($event->{respond})) {
+		$self->{talker}->say($event->{respond});
+		return "Auto-joined a list with: $event->{respond}";
+	}
 }
 
 1;
