@@ -9,9 +9,8 @@ sub handle {
 	return if $event->{alarm};
 	return unless $event->{msgtype} =~ 'OBSERVE TALK|TALK|LISTTALK|TELL';
 
-	my $talker = $event->{talker};
-	return _exchange($talker,$event) if $event->{command} =~ /exchange/i;
-	return _currencies($talker,$event) if $event->{command} =~ /currencies/i;
+	return _exchange($event->{talker},$event) if $event->{command} =~ /exchange/i;
+	return _currencies($event->{talker},$event) if $event->{command} =~ /currencies/i;
 
 	return 0;
 }
