@@ -9,7 +9,7 @@ sub new {
 
 sub handle {
 	my ($self,$event) = @_;
-	$self->log(sprintf('%s was called', ref($self)));
+	$self->log(sprintf('%s was called but has handle() method', ref($self)));
 }
 
 sub log {
