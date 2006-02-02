@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in botbot2 `find . | egrep "\.p(l|m)$"`
+do
+	perl -c $i
+done
+
