@@ -4026,3 +4026,891 @@
 [2006-02-02 16:02:44] DONE You start observing 'Public'.
 [2006-02-02 16:02:56] OBSERVED public TALK neech       @i'm cold {@public}
 [2006-02-02 16:03:25] OBSERVED public TALK neech       @1000/60 {@public}
+[2006-02-02 16:05:00] OBSERVED Public EMOTE @ HeatherS cuddles neechi {@Public}
+[2006-02-02 16:05:05] OBSERVED Public TALK HeatherS    @Twitch is all hyper today {@Public}
+[2006-02-02 16:05:14] OBSERVED public TALK neech       @i'm down today {@public}
+[2006-02-02 16:05:18] OBSERVED Public TALK HeatherS    @aw  {@Public}
+[2006-02-02 16:05:23] OBSERVED Public TALK tims        @( {@Public}
+[2006-02-02 16:05:24] OBSERVED Public TALK HeatherS    @Twitch is sucking the lifeforce out of you :/ {@Public}
+[2006-02-02 16:05:33] OBSERVED public TALK neech       @lol {@public}
+[2006-02-02 16:05:35] OBSERVED public TALK neech       @maybe {@public}
+[2006-02-02 16:05:37] SHOUT tims        !VAMPIRE HAMSTER
+[2006-02-02 16:05:52] OBSERVED Public TALK HeatherS    @hampire they're called, tims {@Public}
+[2006-02-02 16:06:38] OBSERVED Public TALK tims        @do they Strike Back? {@Public}
+[2006-02-02 16:06:53] OBSERVED Public TALK HeatherS    @they lunge {@Public}
+[2006-02-02 16:07:06] OBSERVED Public TALK tims        @A small hampire lunges at you with Bite! {@Public}
+[2006-02-02 16:07:34] IDLE Sully returns from idling.
+[2006-02-02 16:07:40] OBSERVED Public TALK HeatherS    @) {@Public}
+[2006-02-02 16:07:45] OBSERVED Public TALK HeatherS    @hello hubby  {@Public}
+[2006-02-02 16:08:34] OBSERVED Public EMOTE @ Sully finishes teaching new chappy how to configure switches and use ios {@Public}
+[2006-02-02 16:16:17] plugin::Iana was called but has handle() method
+[2006-02-02 16:16:27] plugin::Iana was called but has handle() method
+[2006-02-02 16:16:37] plugin::Iana was called but has handle() method
+[2006-02-02 16:16:47] plugin::Iana was called but has handle() method
+[2006-02-02 16:16:57] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:07] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:17] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:27] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:37] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:48] plugin::Iana was called but has handle() method
+[2006-02-02 16:17:58] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:08] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:18] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:28] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:38] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:48] plugin::Iana was called but has handle() method
+[2006-02-02 16:18:58] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:08] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:18] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:28] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:38] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:48] plugin::Iana was called but has handle() method
+[2006-02-02 16:19:58] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:09] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:19] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:29] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:39] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:49] plugin::Iana was called but has handle() method
+[2006-02-02 16:20:59] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:09] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:19] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:29] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:39] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:49] plugin::Iana was called but has handle() method
+[2006-02-02 16:21:59] plugin::Iana was called but has handle() method
+[2006-02-02 16:22:09] plugin::Iana was called but has handle() method
+[2006-02-02 16:22:19] plugin::Iana was called but has handle() method
+[2006-02-02 16:22:29] plugin::Iana was called but has handle() method
+[2006-02-02 16:22:39] plugin::Iana was called but has handle() method
+[2006-02-02 16:22:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:23:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:24:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:25:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:26:51] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:01] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:11] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:21] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:31] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:41] plugin::Iana was called but has handle() method
+[2006-02-02 16:27:51] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:01] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:11] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:21] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:31] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:41] plugin::Iana was called but has handle() method
+[2006-02-02 16:28:51] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:01] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:11] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:22] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:32] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:42] plugin::Iana was called but has handle() method
+[2006-02-02 16:29:52] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ for general help.
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] RAW +++ End of MOTD
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 16:30:33] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:33] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:33] DONE You start observing 'Public'.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    C                 androgyny         bbcnews           bot              
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    cpan              flirt             foo              *foo2             
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    ginger            movies            perl              perverted        
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    puns              rant              silly             singing          
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    svn               sysadmin          technews          tits             
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTS    tmi               tourettes         vent                               
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] DONE 30 total.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] ERROR That list is locked.
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {C}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {androgyny}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {bbcnews}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {bot}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {cpan}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {flirt}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {foo}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {ginger}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {movies}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {perl}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {perverted}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {puns}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {rant}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {silly}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {singing}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {svn}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {sysadmin}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {technews}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {tits}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {tmi}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {tourettes}
+[2006-02-02 16:30:43] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:43] plugin::Iana was called but has handle() method
+[2006-02-02 16:30:43] LISTJOIN 2bot has joined the list. {vent}
+[2006-02-02 16:30:53] plugin::Dict was called but has handle() method
+[2006-02-02 16:30:53] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:03] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:03] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:13] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:13] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:13] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:13] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:13] LISTTALK tims        %urban pee {tmi}
+[2006-02-02 16:31:30] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:40] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:50] plugin::Dict was called but has handle() method
+[2006-02-02 16:31:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:31:50] SHOUT neech       !PEE!
+[2006-02-02 16:32:00] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:32:10] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:32:20] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:32:30] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:32:40] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:32:50] plugin::Dict was called but has handle() method
+[2006-02-02 16:32:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:00] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:00] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:10] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:10] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:20] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:20] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:30] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:30] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:40] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:40] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:50] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:50] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:53] plugin::Dict was called but has handle() method
+[2006-02-02 16:33:53] plugin::Iana was called but has handle() method
+[2006-02-02 16:33:53] OBSERVED Public TALK tims        @coo! {@Public}
+[2006-02-02 16:34:02] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:02] plugin::Iana was called but has handle() method
+[2006-02-02 16:34:02] OBSERVED Public EMOTE @ tims breaks a test script by running it while it's being edited {@Public}
+[2006-02-02 16:34:12] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:12] plugin::Iana was called but has handle() method
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ for general help.
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] RAW +++ End of MOTD
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 16:34:54] plugin::Dict was called but has handle() method
+[2006-02-02 16:34:54] DONE You start observing 'Public'.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] DONE 30 total.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:04] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:04] ERROR That list is locked.
+[2006-02-02 16:35:13] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:13] LISTTALK tims        %brb ggp {tmi}
+[2006-02-02 16:35:23] plugin::Dict was called but has handle() method
+[2006-02-02 16:35:26] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 16:35:26] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 16:35:26] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 16:35:26] RAW +++ for general help.
+[2006-02-02 16:35:26] RAW +++
+[2006-02-02 16:35:26] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 16:35:26] RAW +++
+[2006-02-02 16:35:26] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 16:35:26] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 16:35:26] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 16:35:26] RAW +++
+[2006-02-02 16:35:26] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 16:35:26] RAW +++
+[2006-02-02 16:35:26] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 16:35:26] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 16:35:26] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 16:35:26] RAW +++
+[2006-02-02 16:35:26] RAW +++ End of MOTD
+[2006-02-02 16:35:26] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 16:35:26] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 16:35:26] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 16:35:26] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 16:35:26] DONE You start observing 'Public'.
+[2006-02-02 16:35:36] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:35:36] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 16:35:36] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 16:35:36] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:35:36] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 16:35:36] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 16:35:36] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 16:35:36] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 16:35:36] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 16:35:36] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 16:35:36] DONE 30 total.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:36] ERROR That list is locked.
+[2006-02-02 16:35:37] LISTTALK neech       %hi {foo2}
+[2006-02-02 16:35:40] LISTTALK neech       %hello {foo2}
+[2006-02-02 16:35:47] LISTTALK neech       %exchange usd {foo2}
+[2006-02-02 16:36:16] IDLE pkent starts automatically idling.
+[2006-02-02 16:36:31] LISTTALK neech       % http://www.tfb.net {foo2}
+[2006-02-02 16:36:49] LISTTALK neech       %dict run {foo2}
+[2006-02-02 16:36:54] LISTTALK neech       %urban run {foo2}
+[2006-02-02 16:37:48] LISTTALK neech       %tracert 10.20.30.40 {foo2}
+[2006-02-02 16:38:01] LISTTALK neech       %google love {foo2}
+[2006-02-02 16:38:12] LISTTALK neech       %remember sex {foo2}
+[2006-02-02 16:38:17] LISTTALK neech       %remember tfb {foo2}
+[2006-02-02 16:59:07] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 16:59:07] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 16:59:07] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 16:59:07] RAW +++ for general help.
+[2006-02-02 16:59:07] RAW +++
+[2006-02-02 16:59:07] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 16:59:07] RAW +++
+[2006-02-02 16:59:07] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 16:59:07] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 16:59:07] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 16:59:07] RAW +++
+[2006-02-02 16:59:07] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 16:59:07] RAW +++
+[2006-02-02 16:59:07] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 16:59:07] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 16:59:07] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 16:59:07] RAW +++
+[2006-02-02 16:59:07] RAW +++ End of MOTD
+[2006-02-02 16:59:07] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 16:59:07] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 16:59:07] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 16:59:07] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 16:59:07] DONE You start observing 'Public'.
+[2006-02-02 16:59:48] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 16:59:48] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 16:59:48] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 16:59:48] RAW +++ for general help.
+[2006-02-02 16:59:48] RAW +++
+[2006-02-02 16:59:48] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 16:59:48] RAW +++
+[2006-02-02 16:59:48] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 16:59:48] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 16:59:48] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 16:59:48] RAW +++
+[2006-02-02 16:59:48] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 16:59:48] RAW +++
+[2006-02-02 16:59:48] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 16:59:48] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 16:59:48] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 16:59:48] RAW +++
+[2006-02-02 16:59:48] RAW +++ End of MOTD
+[2006-02-02 16:59:48] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 16:59:48] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 16:59:48] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 16:59:48] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 16:59:48] DONE You start observing 'Public'.
+[2006-02-02 16:59:58] TELL neech       >30+2
+[2006-02-02 16:59:58] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:59:58] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 16:59:59] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 16:59:59] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 16:59:59] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 16:59:59] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 16:59:59] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 16:59:59] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 16:59:59] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 16:59:59] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 16:59:59] DONE 30 total.
+[2006-02-02 16:59:59] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 16:59:59] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 16:59:59] WHO Flux         Public              U      32:59 metahusky.net              
+[2006-02-02 16:59:59] WHO HeatherS     Public              P      02:53 gamma.barnet.ac.uk         
+[2006-02-02 16:59:59] WHO Heds         public              M      01:36 metahusky.net              
+[2006-02-02 16:59:59] WHO neech        public              M      00:00 arwen.tfb.net              
+[2006-02-02 16:59:59] WHO pkent        Public              U      IDLE  gateb.kw.bbc.co.uk         
+[2006-02-02 16:59:59] WHO Sully        Public              U      42:26 gamma.barnet.ac.uk         
+[2006-02-02 16:59:59] WHO tims         Public              U      03:41 gateb.kw.bbc.co.uk         
+[2006-02-02 16:59:59] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 16:59:59] WHO zoe          Public              P      15:56 arwen.tfb.net              
+[2006-02-02 16:59:59] WHOHDR 7 active users (2 idle), 9 total.
+[2006-02-02 16:59:59] DONETELL Whispered to neech: '30+2 = 32'
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 16:59:59] ERROR That list is locked.
+[2006-02-02 17:20:45] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 17:20:45] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 17:20:45] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 17:20:45] RAW +++ for general help.
+[2006-02-02 17:20:45] RAW +++
+[2006-02-02 17:20:45] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 17:20:45] RAW +++
+[2006-02-02 17:20:45] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 17:20:45] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 17:20:45] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 17:20:45] RAW +++
+[2006-02-02 17:20:45] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 17:20:45] RAW +++
+[2006-02-02 17:20:45] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 17:20:45] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 17:20:45] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 17:20:45] RAW +++
+[2006-02-02 17:20:45] RAW +++ End of MOTD
+[2006-02-02 17:20:45] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 17:20:45] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 17:20:45] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 17:20:45] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 17:20:45] DONE You start observing 'Public'.
+[2006-02-02 17:20:55] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:20:55] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 17:20:55] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 17:20:55] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:20:55] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 17:20:55] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 17:20:55] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 17:20:55] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 17:20:55] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 17:20:55] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 17:20:55] DONE 30 total.
+[2006-02-02 17:20:55] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:20:55] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:20:55] WHO Flux         Public              U      53:56 metahusky.net              
+[2006-02-02 17:20:55] WHO HeatherS     Public              P      06:20 gamma.barnet.ac.uk         
+[2006-02-02 17:20:55] WHO Heds         public              M      03:49 metahusky.net              
+[2006-02-02 17:20:55] WHO neech        public              M      00:04 arwen.tfb.net              
+[2006-02-02 17:20:55] WHO pkent        Public              U      11:21 gateb.kw.bbc.co.uk         
+[2006-02-02 17:20:55] WHO Sully        Public              U      IDLE  gamma.barnet.ac.uk         
+[2006-02-02 17:20:55] WHO tims         Public              U      15:36 gateb.kw.bbc.co.uk         
+[2006-02-02 17:20:55] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:20:55] WHO zoe          Public              P      36:53 arwen.tfb.net              
+[2006-02-02 17:20:55] WHOHDR 7 active users (2 idle), 9 total.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] ERROR That list is locked.
+[2006-02-02 17:20:55] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:20:55] ERROR That list does not exist!
+[2006-02-02 17:20:59] LISTTALK neech       %oh {Masters}
+[2006-02-02 17:21:00] LISTTALK neech       %shame {Masters}
+[2006-02-02 17:21:02] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:21:02] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:21:02] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:21:03] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:21:03] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:21:24] LISTTALK Heds        %Can I have fries with that? {Masters}
+[2006-02-02 17:21:25] ERROR That list does not exist!
+[2006-02-02 17:23:24] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 17:23:24] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 17:23:24] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 17:23:24] RAW +++ for general help.
+[2006-02-02 17:23:24] RAW +++
+[2006-02-02 17:23:24] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 17:23:24] RAW +++
+[2006-02-02 17:23:24] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 17:23:24] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 17:23:24] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 17:23:24] RAW +++
+[2006-02-02 17:23:24] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 17:23:24] RAW +++
+[2006-02-02 17:23:24] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 17:23:24] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 17:23:24] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 17:23:24] RAW +++
+[2006-02-02 17:23:24] RAW +++ End of MOTD
+[2006-02-02 17:23:24] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 17:23:24] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 17:23:24] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 17:23:24] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 17:23:24] DONE You start observing 'Public'.
+[2006-02-02 17:23:26] LISTTALK neech       %OHGOIEHRG OERIHG OERHG EPRHIGOIREH GOERHG OERHGO IERHG OIHREHG {Masters}
+[2006-02-02 17:23:26] ERROR That list does not exist!
+[2006-02-02 17:23:27] LISTTALK neech       %oo {Masters}
+[2006-02-02 17:23:28] LISTTALK neech       %yay {Masters}
+[2006-02-02 17:23:30] LISTTALK neech       %citing {Masters}
+[2006-02-02 17:23:36] LISTTALK neech       %wg ih5jg54y g5ogh5HIORT HTRH o bhrt3e4g45 {Masters}
+[2006-02-02 17:23:46] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:23:46] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 17:23:46] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 17:23:46] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:23:46] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 17:23:46] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 17:23:46] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 17:23:46] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 17:23:46] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 17:23:46] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 17:23:46] DONE 30 total.
+[2006-02-02 17:23:46] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:23:46] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:23:46] WHO Flux         Public              U      56:47 metahusky.net              
+[2006-02-02 17:23:46] WHO HeatherS     Public              P      09:11 gamma.barnet.ac.uk         
+[2006-02-02 17:23:46] WHO Heds         public              M      01:13 metahusky.net              
+[2006-02-02 17:23:46] WHO neech        public              M      00:10 arwen.tfb.net              
+[2006-02-02 17:23:46] WHO pkent        Public              U      14:12 gateb.kw.bbc.co.uk         
+[2006-02-02 17:23:46] WHO Sully        Public              U      IDLE  gamma.barnet.ac.uk         
+[2006-02-02 17:23:46] WHO tims         Public              U      18:27 gateb.kw.bbc.co.uk         
+[2006-02-02 17:23:46] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:23:46] WHO zoe          Public              P      39:44 arwen.tfb.net              
+[2006-02-02 17:23:46] WHOHDR 7 active users (2 idle), 9 total.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:23:46] ERROR That list is locked.
+[2006-02-02 17:24:57] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 17:24:57] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 17:24:57] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 17:24:57] RAW +++ for general help.
+[2006-02-02 17:24:57] RAW +++
+[2006-02-02 17:24:57] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 17:24:57] RAW +++
+[2006-02-02 17:24:57] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 17:24:57] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 17:24:57] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 17:24:57] RAW +++
+[2006-02-02 17:24:57] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 17:24:57] RAW +++
+[2006-02-02 17:24:57] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 17:24:57] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 17:24:57] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 17:24:57] RAW +++
+[2006-02-02 17:24:57] RAW +++ End of MOTD
+[2006-02-02 17:24:57] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 17:24:57] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 17:24:57] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 17:24:57] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 17:24:57] DONE You start observing 'Public'.
+[2006-02-02 17:24:58] LISTTALK neech       %wg ih5jg54y g5ogh5HIORT HTRH o bhrt3e4g45 {Masters}
+[2006-02-02 17:25:03] LISTTALK neech       %pardon? {Masters}
+[2006-02-02 17:25:08] LISTTALK neech       %i didn't shout {Masters}
+[2006-02-02 17:25:28] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 17:25:28] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 17:25:28] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 17:25:28] RAW +++ for general help.
+[2006-02-02 17:25:28] RAW +++
+[2006-02-02 17:25:28] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 17:25:28] RAW +++
+[2006-02-02 17:25:28] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 17:25:28] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 17:25:28] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 17:25:28] RAW +++
+[2006-02-02 17:25:28] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 17:25:28] RAW +++
+[2006-02-02 17:25:28] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 17:25:28] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 17:25:28] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 17:25:28] RAW +++
+[2006-02-02 17:25:28] RAW +++ End of MOTD
+[2006-02-02 17:25:28] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 17:25:28] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 17:25:28] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 17:25:28] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 17:25:28] DONE You start observing 'Public'.
+[2006-02-02 17:25:29] LISTTALK neech       %wg ih5jg54y g5ogh5HIORT HTRH o bhrt3e4g45 {Masters}
+[2006-02-02 17:25:34] LISTTALK Heds        %NO SOUP FOR YOU, 2BOT SHAKKUR! {Masters}
+[2006-02-02 17:25:34] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:37] LISTTALK neech       %init {Masters}
+[2006-02-02 17:25:39] LISTTALK neech       %that's better {Masters}
+[2006-02-02 17:25:41] LISTTALK Heds        %Was that you or me? {Masters}
+[2006-02-02 17:25:48] OBSERVED Public TALK HeatherS    @arugh {@Public}
+[2006-02-02 17:25:49] LISTTALK neech       %both of us {Masters}
+[2006-02-02 17:25:50] OBSERVED Public TALK HeatherS    @Heres ma little persil sitting wi me watching the tv. {@Public}
+[2006-02-02 17:25:50] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:51] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:51] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:51] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:52] LISTTALK neech       %#$T($#&%#$  #$*%$# %*$#REUIOGTUREGORT HGOTRBOT UHBOTU HBTR {Masters}
+[2006-02-02 17:25:53] LISTTALK Heds        %:))) {Masters}
+[2006-02-02 17:25:59] LISTTALK neech       %she'll not remind us for a lil while  now {Masters}
+[2006-02-02 17:26:01] LISTTALK Heds        %She's got shy {Masters}
+[2006-02-02 17:26:04] LISTTALK neech       %aye {Masters}
+[2006-02-02 17:26:04] LISTEMOTE % Heds aaaahs {Masters}
+[2006-02-02 17:26:08] OBSERVED Public TALK tims        @a hamster called parsley? {@Public}
+[2006-02-02 17:26:08] LISTTALK Heds        %Nice going, Batgirl {Masters}
+[2006-02-02 17:26:18] LISTTALK neech       %https://svn.perlgirl.org.uk/dav/botbot2/plugin/NoiseyPeople.pm {Masters}
+[2006-02-02 17:26:29] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:26:29] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 17:26:29] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 17:26:29] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:26:29] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 17:26:29] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 17:26:29] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 17:26:29] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 17:26:29] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 17:26:29] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 17:26:29] DONE 30 total.
+[2006-02-02 17:26:29] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:26:29] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:26:29] WHO Flux         Public              U      59:30 metahusky.net              
+[2006-02-02 17:26:29] WHO HeatherS     Public              P      00:39 gamma.barnet.ac.uk         
+[2006-02-02 17:26:29] WHO Heds         public              M      00:21 metahusky.net              
+[2006-02-02 17:26:29] WHO neech        public              M      00:11 arwen.tfb.net              
+[2006-02-02 17:26:29] WHO pkent        Public              U      16:55 gateb.kw.bbc.co.uk         
+[2006-02-02 17:26:29] WHO Sully        Public              U      IDLE  gamma.barnet.ac.uk         
+[2006-02-02 17:26:29] WHO tims         Public              U      00:21 gateb.kw.bbc.co.uk         
+[2006-02-02 17:26:29] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:26:29] WHO zoe          Public              P      42:27 arwen.tfb.net              
+[2006-02-02 17:26:29] WHOHDR 7 active users (2 idle), 9 total.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:26:29] ERROR That list is locked.
+[2006-02-02 17:27:01] IDLE Flux starts automatically idling.
+[2006-02-02 17:27:02] LISTTALK neech       %calculator should work {Masters}
+[2006-02-02 17:27:05] LISTTALK neech       %pi / 3.1 {Masters}
+[2006-02-02 17:27:14] OBSERVED Public TALK HeatherS    @no. persil {@Public}
+[2006-02-02 17:27:17] LISTTALK Heds        %I keep reading this as NoseyPeople {Masters}
+[2006-02-02 17:27:20] OBSERVED Public TALK HeatherS    @like the washing stuff {@Public}
+[2006-02-02 17:27:21] OBSERVED Public TALK HeatherS    @it's white {@Public}
+[2006-02-02 17:27:34] LISTTALK Heds        %And over here {Masters}
+[2006-02-02 17:27:39] OBSERVED Public TALK tims        @they could've called it hydrogen peroxide {@Public}
+[2006-02-02 17:27:41] OBSERVED Public TALK HeatherS    @http://www.hamstercare.co.uk/forum/index.php?showtopic=4440&st=0 {@Public}
+[2006-02-02 17:27:43] LISTTALK neech       %indeed {Masters}
+[2006-02-02 17:27:52] OBSERVED Public TALK HeatherS    @Hydro might be a really cool name, actually :) {@Public}
+[2006-02-02 17:27:52] LISTTALK Heds        %ROTFL!!!!!!! {Masters}
+[2006-02-02 17:27:57] LISTTALK neech       %? {Masters}
+[2006-02-02 17:27:58] LISTTALK Heds        %I've seen the exception to the rule {Masters}
+[2006-02-02 17:28:06] OBSERVED Public TALK tims        @googlefor norsk hydro {@Public}
+[2006-02-02 17:28:06] LISTTALK neech       %oh {Masters}
+[2006-02-02 17:28:06] LISTTALK neech       %yes {Masters}
+[2006-02-02 17:28:07] LISTTALK neech       %they discovered that the other day {Masters}
+[2006-02-02 17:28:09] LISTTALK Heds        %"Unless you're Zoe, in which case, tread softly and carry a handbag" {Masters}
+[2006-02-02 17:28:10] LISTTALK neech       %it confused them somewhat {Masters}
+[2006-02-02 17:28:11] LISTTALK neech       %lol {Masters}
+[2006-02-02 17:28:20] LISTEMOTE % neech giggles {Masters}
+[2006-02-02 17:28:21] LISTEMOTE % Heds giggles {Masters}
+[2006-02-02 17:28:33] OBSERVED Public TALK HeatherS    @okay i'm going to have a light roundthings dinner i think. fishcakes and cornfritters  {@Public}
+[2006-02-02 17:28:43] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:28:43] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:28:43] WHO Flux         Public              U      IDLE  metahusky.net              
+[2006-02-02 17:28:43] WHO HeatherS     Public              P      00:10 gamma.barnet.ac.uk         
+[2006-02-02 17:28:43] WHO Heds         public              M      00:22 metahusky.net              
+[2006-02-02 17:28:43] WHO neech        public              M      00:23 arwen.tfb.net              
+[2006-02-02 17:28:43] WHO pkent        Public              U      19:09 gateb.kw.bbc.co.uk         
+[2006-02-02 17:28:43] WHO Sully        Public              U      IDLE  gamma.barnet.ac.uk         
+[2006-02-02 17:28:43] WHO tims         Public              U      00:41 gateb.kw.bbc.co.uk         
+[2006-02-02 17:28:43] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:28:43] WHO zoe          Public              P      44:41 arwen.tfb.net              
+[2006-02-02 17:28:43] WHOHDR 6 active users (3 idle), 9 total.
+[2006-02-02 17:28:50] LISTTALK neech       %tonight i just need to fine tune things like Remember, TinyURL and IMDB which use shared subroutines {Masters}
+[2006-02-02 17:28:59] LISTTALK neech       %but she's now migrated from all the old code {Masters}
+[2006-02-02 17:29:00] LISTTALK Heds        %Common library? {Masters}
+[2006-02-02 17:29:01] LISTTALK neech       % :) {Masters}
+[2006-02-02 17:29:02] LISTTALK neech       %aye {Masters}
+[2006-02-02 17:29:08] LISTEMOTE % Heds noddles {Masters}
+[2006-02-02 17:29:11] OBSERVED Public TALK tims        @roundthings (: {@Public}
+[2006-02-02 17:29:38] OBSERVED public TALK Heds        @squirrels {@public}
+[2006-02-02 17:29:42] LISTEMOTE % neech *really* wants a heds made module {Masters}
+[2006-02-02 17:29:44] LISTTALK neech       % :) {Masters}
+[2006-02-02 17:29:48] LISTTALK neech       %i want people to contribute to her {Masters}
+[2006-02-02 17:29:51] LISTTALK neech       %make her funnererer {Masters}
+[2006-02-02 17:29:57] IDLE Sully returns from idling.
+[2006-02-02 17:30:05] LISTTALK Heds        %I shall do a Heds module this weekend :) {Masters}
+[2006-02-02 17:30:05] LISTTALK neech       %the existing modules should make an excellent set to copy from {Masters}
+[2006-02-02 17:30:08] LISTTALK neech       % :) {Masters}
+[2006-02-02 17:30:16] LISTTALK neech       %should be easy to make something to leave messages {Masters}
+[2006-02-02 17:30:18] LISTTALK neech       %like halibot {Masters}
+[2006-02-02 17:30:58] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:30:58] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:30:58] WHO Flux         Public              U      IDLE  metahusky.net              
+[2006-02-02 17:30:58] WHO HeatherS     Public              P      02:25 gamma.barnet.ac.uk         
+[2006-02-02 17:30:58] WHO Heds         public              M      00:53 metahusky.net              
+[2006-02-02 17:30:58] WHO neech        public              M      00:31 arwen.tfb.net              
+[2006-02-02 17:30:58] WHO pkent        Public              U      21:24 gateb.kw.bbc.co.uk         
+[2006-02-02 17:30:58] WHO Sully        Public              U      00:07 gamma.barnet.ac.uk         
+[2006-02-02 17:30:58] WHO tims         Public              U      01:47 gateb.kw.bbc.co.uk         
+[2006-02-02 17:30:58] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:30:58] WHO zoe          Public              P      46:56 arwen.tfb.net              
+[2006-02-02 17:30:58] WHOHDR 7 active users (2 idle), 9 total.
+[2006-02-02 17:31:14] IDLE Flux returns from idling.
+[2006-02-02 17:31:52] RAW +++ For an account, talk to a master.  You can get a list of
+[2006-02-02 17:31:52] RAW +++ available commands by typing '.help commands' and help on a
+[2006-02-02 17:31:52] RAW +++ certain command by typing '.help command'.  Just use '.help'
+[2006-02-02 17:31:52] RAW +++ for general help.
+[2006-02-02 17:31:52] RAW +++
+[2006-02-02 17:31:52] RAW +++ Compliments, complaints, requests?  Use .request
+[2006-02-02 17:31:52] RAW +++
+[2006-02-02 17:31:52] RAW +++ You'll probably want to type ".set prompts on", ".set term colour"
+[2006-02-02 17:31:52] RAW +++ and ".set echo off" if you're using a decent client, like
+[2006-02-02 17:31:52] RAW +++ TinyFugue. Also do ".set strip on" if you emote lots too.
+[2006-02-02 17:31:52] RAW +++
+[2006-02-02 17:31:52] RAW +++ https://talker.tfb.net/ - Please do not link to this URL
+[2006-02-02 17:31:52] RAW +++
+[2006-02-02 17:31:52] RAW +++ We're currently looking for an official name for this talker,
+[2006-02-02 17:31:52] RAW +++ and an interesting logo for the website. If you have any
+[2006-02-02 17:31:52] RAW +++ good suggestions, please be nice and vocal.
+[2006-02-02 17:31:52] RAW +++
+[2006-02-02 17:31:52] RAW +++ End of MOTD
+[2006-02-02 17:31:52] DONE Options: Beep On, CR On, Echo Off, Strip Off, Prompts Off, Shouts On, Messages On, Lists On, Idling messages On, Terminal Client, Width 79 chars, Language en-gb.
+[2006-02-02 17:31:52] LOOKHDR Active users in group Bots-R-Us:
+[2006-02-02 17:31:52] LOOK   2bot(P)       BotBot(P)     PerlBot(U)                  
+[2006-02-02 17:31:52] COMMENT Heds: Today I teach Bob how to code. Via the medium of a large baseball bat and a sock filled with bricks.
+[2006-02-02 17:31:52] DONE You start observing 'Public'.
+[2006-02-02 17:32:02] LISTSHDR Available locked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:32:02] LISTS    BoysOnly          DNM               GirlsOnly        *Masters          
+[2006-02-02 17:32:02] LISTS    bbcspods          masterz           trans                              
+[2006-02-02 17:32:02] LISTSHDR Available unlocked lists are: ('*' marks ones currently subscribed to)
+[2006-02-02 17:32:02] LISTS   *C                *androgyny        *bbcnews          *bot              
+[2006-02-02 17:32:02] LISTS   *cpan             *flirt            *foo              *foo2             
+[2006-02-02 17:32:02] LISTS   *ginger           *movies           *perl             *perverted        
+[2006-02-02 17:32:02] LISTS   *puns             *rant             *silly            *singing          
+[2006-02-02 17:32:02] LISTS   *svn              *sysadmin         *technews         *tits             
+[2006-02-02 17:32:02] LISTS   *tmi              *tourettes        *vent                               
+[2006-02-02 17:32:02] DONE 30 total.
+[2006-02-02 17:32:02] WHOHDR Users on talker.tfb.net at the moment:
+[2006-02-02 17:32:02] WHOHDR Name         Group               Flags  Idle  Site
+[2006-02-02 17:32:02] WHO Flux         Public              U      00:43 metahusky.net              
+[2006-02-02 17:32:02] WHO HeatherS     Public              P      03:29 gamma.barnet.ac.uk         
+[2006-02-02 17:32:02] WHO Heds         public              M      01:57 metahusky.net              
+[2006-02-02 17:32:02] WHO neech        public              M      01:35 arwen.tfb.net              
+[2006-02-02 17:32:02] WHO pkent        Public              U      22:28 gateb.kw.bbc.co.uk         
+[2006-02-02 17:32:02] WHO Sully        Public              U      00:30 gamma.barnet.ac.uk         
+[2006-02-02 17:32:02] WHO tims         Public              U      02:51 gateb.kw.bbc.co.uk         
+[2006-02-02 17:32:02] WHO tomc         Public              U      IDLE  hawking.rbsov.woot.co.uk   
+[2006-02-02 17:32:02] WHO zoe          Public              P      48:00 arwen.tfb.net              
+[2006-02-02 17:32:02] WHOHDR 8 active users (1 idle), 9 total.
+[2006-02-02 17:32:02] ERROR That list is locked.
+[2006-02-02 17:32:02] ERROR That list is locked.
+[2006-02-02 17:32:02] ERROR That list is locked.
+[2006-02-02 17:32:02] ERROR That list is locked.
+[2006-02-02 17:32:02] ERROR That list is locked.
+[2006-02-02 17:32:02] ERROR That list is locked.
