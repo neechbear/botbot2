@@ -429,3 +429,238 @@
 [2006-02-02 14:41:28] TELL neech       >hello
 [2006-02-02 14:41:43] LISTTALK neech       %the last reference in that debug output will say that the HelloWorld plugin said hello :) {Masters}
 [2006-02-02 14:41:53] LISTTALK neech       %so plugins are aware of who's doing what before them {Masters}
+[2006-02-02 14:42:18] LISTTALK neech       %ok {Masters}
+[2006-02-02 14:42:23] LISTTALK neech       %brb ggp and need to get some munchies {Masters}
+[2006-02-02 14:42:34] LISTTALK Heds        %kk {Masters}
+[2006-02-02 14:43:31] TELL Heds        >debug 3
+[2006-02-02 14:43:34] TELL Heds        >hello
+[2006-02-02 14:44:18] OBSERVED Public EMOTE @ Flux diverts the Thames through Barnet and releases some whales. {@Public}
+[2006-02-02 14:46:49] OBSERVED Public EMOTE @ HeatherS watches the whales die. hohum {@Public}
+[2006-02-02 14:47:11] OBSERVED public TALK Heds        @This still Six Nations? :) {@public}
+[2006-02-02 14:47:37] OBSERVED Public TALK Flux        @They're special river whales. {@Public}
+[2006-02-02 14:47:46] OBSERVED Public TALK Flux        @Which still Six Nations? {@Public}
+[2006-02-02 14:48:05] OBSERVED Public TALK tims        @That was how we got here {@Public}
+[2006-02-02 14:48:50] OBSERVED Public TALK tims        @bore (uninteresting) -> bore (digging) -> channel tunnel -> channel -> diverting thames through barnet -> whales -> wales -> six nations -> bore (uninteresting) {@Public}
+[2006-02-02 14:48:53] OBSERVED Public TALK tims        @repeat until bored {@Public}
+[2006-02-02 14:49:25] OBSERVED Public TALK tims        @(as long as you don't have to seduce andiiiiiiiiiiiiii MacacqueDowel to get out, I'm happy) {@Public}
+[2006-02-02 14:49:34] OBSERVED Public TALK tims        @</mriaow> {@Public}
+[2006-02-02 14:49:44] OBSERVED Public EMOTE @ Flux covers tims in crispy crumb. {@Public}
+[2006-02-02 14:52:30] OBSERVED Public EMOTE @ HeatherS ponders making herself a pot of teeaaa {@Public}
+[2006-02-02 14:52:43] OBSERVED Public TALK Flux        @Just take some eeeee. {@Public}
+[2006-02-02 14:52:53] OBSERVED public TALK Heds        @Andi Mcdowell {@public}
+[2006-02-02 14:52:54] OBSERVED public EMOTE @ Heds shudders {@public}
+[2006-02-02 14:52:56] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:00] OBSERVED public TALK Heds        @stan {@public}
+[2006-02-02 14:53:07] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:11] OBSERVED public TALK Heds        @stan {@public}
+[2006-02-02 14:53:12] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:16] OBSERVED public TALK Heds        @stan {@public}
+[2006-02-02 14:53:17] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:18] OBSERVED public TALK Heds        @stan {@public}
+[2006-02-02 14:53:21] OBSERVED Public TALK tims        @gah {@Public}
+[2006-02-02 14:53:22] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:24] OBSERVED public TALK Heds        @stan! {@public}
+[2006-02-02 14:53:27] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:32] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:33] OBSERVED Public TALK Flux        @Heds is being exhausted. {@Public}
+[2006-02-02 14:53:37] CONNECT HELP (guest) has connected from 193.178.223.25 in group Public.
+[2006-02-02 14:53:45] DISCONNECT HELP has disconnected! - Connection closed.
+[2006-02-02 14:53:45] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:50] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:53:54] OBSERVED public TALK Heds        @This is going to get old, quick {@public}
+[2006-02-02 14:53:55] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:00] CONNECT default (guest) has connected from 193.178.223.25 in group Public.
+[2006-02-02 14:54:05] DISCONNECT default has disconnected! - Connection closed.
+[2006-02-02 14:54:05] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:10] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:15] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:15] OBSERVED public TALK Heds        @if only I had bansite {@public}
+[2006-02-02 14:54:20] CONNECT DmdT (guest) has connected from 193.178.223.25 in group Public.
+[2006-02-02 14:54:25] DISCONNECT DmdT has disconnected! - Connection closed.
+[2006-02-02 14:54:25] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:25] OBSERVED Public TALK Flux        @I thought you were a master. {@Public}
+[2006-02-02 14:54:27] OBSERVED Public TALK Flux        @? {@Public}
+[2006-02-02 14:54:30] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:35] CONNECTWARN User connecting from minny.neko-san.net.
+[2006-02-02 14:54:51] OBSERVED Public TALK tims        @(Mice are very good at tailoring their broods to the prevailing resources.) {@Public}
+[2006-02-02 14:54:55] OBSERVED Public EMOTE @ tims wonders how they do that. {@Public}
+[2006-02-02 14:55:24] OBSERVED Public TALK HeatherS    @rodents can internally abort foetuses {@Public}
+[2006-02-02 14:55:28] OBSERVED Public TALK Flux        @tims is very good a punning. I wonder how he does that. {@Public}
+[2006-02-02 14:55:31] OBSERVED Public TALK HeatherS    @and re-absorb them {@Public}
+[2006-02-02 14:55:49] OBSERVED Public TALK tims        @heathers> that's disgraceful! murderers! Exterminate them! </pro-lifer> {@Public}
+[2006-02-02 14:56:31] OBSERVED Public TALK HeatherS    @oh no, not natural termination, the horror the horror the horror {@Public}
+[2006-02-02 14:56:39] OBSERVED Public TALK Flux        @Mice can be killed, God put them on earth for man to kill. {@Public}
+[2006-02-02 14:56:50] OBSERVED Public TALK tims        @in that case, did he have to make them so hard to catch? {@Public}
+[2006-02-02 14:57:17] OBSERVED Public TALK Flux        @To challenge the worthy to believe. {@Public}
+[2006-02-02 14:57:25] OBSERVED Public TALK HeatherS    @flux> surely they're there for cats and owls to kill  {@Public}
+[2006-02-02 14:57:41] OBSERVED Public TALK pkent       @heathers> i have heard humans can, but probably not with great conscious control {@Public}
+[2006-02-02 14:58:05] OBSERVED Public TALK pkent       @probably not just humans either {@Public}
+[2006-02-02 14:58:08] OBSERVED Public EMOTE @ Flux remembers the recent Swedish study about birthrate of boys. {@Public}
+[2006-02-02 14:58:27] OBSERVED Public TALK HeatherS    @"im sorry what ive done i have read what you said about using those type of words i will no do it again " -timmy! the annoying user who's posting privledges i took away yesterday {@Public}
+[2006-02-02 14:58:42] OBSERVED Public TALK tims        @"those type of words"? {@Public}
+[2006-02-02 14:59:16] OBSERVED Public TALK HeatherS    @things like "no" instead of "know" etc etc  {@Public}
+[2006-02-02 14:59:35] OBSERVED Public TALK tims        @oh, riteing lyke a unlitrate? {@Public}
+[2006-02-02 15:01:34] OBSERVED Public EMOTE @ tims wonders if maybe timmy is dyslexic {@Public}
+[2006-02-02 15:03:59] OBSERVED Public TALK HeatherS    @maybe timmy is just a dumb kid. it's more likely {@Public}
+[2006-02-02 15:04:04] OBSERVED Public TALK HeatherS    @due to using "1" etc {@Public}
+[2006-02-02 15:04:24] OBSERVED Public TALK HeatherS    @hi i just wanted to see if you got my message please reply back :unsure: {@Public}
+[2006-02-02 15:04:29] OBSERVED Public TALK HeatherS    @yay he's harrassing me  {@Public}
+[2006-02-02 15:04:38] OBSERVED Public TALK tims        @*badger* {@Public}
+[2006-02-02 15:04:43] OBSERVED Public EMOTE @ tims badgers heathers {@Public}
+[2006-02-02 15:04:47] OBSERVED Public TALK tims        @can I have my account back? can I? {@Public}
+[2006-02-02 15:04:53] OBSERVED Public TALK tims        @*badger* {@Public}
+[2006-02-02 15:05:03] OBSERVED public TALK Heds        @FLux > I am {@public}
+[2006-02-02 15:05:11] OBSERVED public TALK Heds        @But I don't have some of the mroe destructive stuff {@public}
+[2006-02-02 15:05:22] OBSERVED Public TALK HeatherS    @he's also one of those people who are like .... "I WANNA BE A MOD!"  {@Public}
+[2006-02-02 15:05:37] OBSERVED Public TALK tims        @) {@Public}
+[2006-02-02 15:05:38] OBSERVED public TALK Heds        @not a rocker? {@public}
+[2006-02-02 15:05:41] OBSERVED Public TALK HeatherS    @and it's just like... I've had to edit nearly every single one of your posts. you are not going to become a mod. ever. {@Public}
+[2006-02-02 15:06:26] OBSERVED Public EMOTE @ HeatherS closes window and waits until she appears offline. I should really have my login be invisible. sigh.  {@Public}
+[2006-02-02 15:06:39] OBSERVED Public TALK Flux        @I thought the definition of master was having all privs, the M does bugger all. {@Public}
+[2006-02-02 15:06:43] OBSERVED Public TALK Flux        @privs = - {@Public}
+[2006-02-02 15:06:49] OBSERVED Public TALK Flux        @on nilex for proper master {@Public}
+[2006-02-02 15:07:27] OBSERVED Public EMOTE @ HeatherS sits and drinks her dareeling tea  {@Public}
+[2006-02-02 15:11:53] OBSERVED Public TALK HeatherS    @coo i have the evict priv and never knew it  {@Public}
+[2006-02-02 15:12:05] OBSERVED Public TALK HeatherS    @what happens when i evict people from public? hm  {@Public}
+[2006-02-02 15:12:10] OBSERVED Public TALK tims        @( {@Public}
+[2006-02-02 15:12:12] OBSERVED Public EMOTE @ tims sniffs {@Public}
+[2006-02-02 15:12:15] OBSERVED Public TALK tims        @bye then... {@Public}
+[2006-02-02 15:12:19] OBSERVED Public TALK HeatherS    @nah  {@Public}
+[2006-02-02 15:12:32] OBSERVED Public TALK tims        @evn f i rite l1ke a n00b? {@Public}
+[2006-02-02 15:12:37] OBSERVED Public TALK HeatherS    @hm .help evict doesn't help  {@Public}
+[2006-02-02 15:12:56] OBSERVED Public EMOTE @ HeatherS burps {@Public}
+[2006-02-02 15:13:02] OBSERVED public TALK Heds        @I guess that happens {@public}
+[2006-02-02 15:13:11] SHOUT Flux        !Arrgghhh I'm in Limbo!
+[2006-02-02 15:13:12] OBSERVED Public TALK HeatherS    @+++ Flux         Limbo               U      06:15 metahusky.net {@Public}
+[2006-02-02 15:13:15] OBSERVED Public TALK HeatherS    @hehe {@Public}
+[2006-02-02 15:13:24] OBSERVED Public TALK HeatherS    @evicted here?  {@Public}
+[2006-02-02 15:13:29] OBSERVED Public TALK tims        @invicted {@Public}
+[2006-02-02 15:13:32] OBSERVED public TALK Heds        @And if you evict from Limbo, they end up back here {@public}
+[2006-02-02 15:13:36] OBSERVED Public TALK Flux        @It was all grey and limboesque. {@Public}
+[2006-02-02 15:13:37] OBSERVED public TALK Heds        @Watch the Flux {@public}
+[2006-02-02 15:13:38] OBSERVED Public TALK HeatherS    @odd {@Public}
+[2006-02-02 15:13:43] OBSERVED Public TALK HeatherS    @heheh {@Public}
+[2006-02-02 15:13:44] OBSERVED Public GROUPCHANGE Flux moves to group 'Soo' from group 'Public'.
+[2006-02-02 15:13:47] OBSERVED public TALK Heds        @Now you see him, now you don't :) {@public}
+[2006-02-02 15:13:57] OBSERVED Public TALK HeatherS    @it's like the disappearing flux dance! {@Public}
+[2006-02-02 15:13:58] OBSERVED Public GROUPCHANGE Flux moves to group 'Public' from group 'Soo'.
+[2006-02-02 15:14:02] OBSERVED Public TALK Flux        @Quit toying with me. {@Public}
+[2006-02-02 15:14:05] OBSERVED public TALK Heds        @awwww {@public}
+[2006-02-02 15:14:07] OBSERVED public TALK Heds        @sorry baby {@public}
+[2006-02-02 15:14:16] OBSERVED Public TALK tims        @I think limbo's supposed to be dull, grey & featureless {@Public}
+[2006-02-02 15:14:21] OBSERVED Public TALK tims        @a bit like White City presently {@Public}
+[2006-02-02 15:14:32] OBSERVED Public GROUPCHANGE HeatherS moves to group 'Limbo' from group 'Public'.
+[2006-02-02 15:14:37] OBSERVED Public GROUPCHANGE HeatherS moves to group 'Public' from group 'Limbo'.
+[2006-02-02 15:14:43] OBSERVED public TALK Heds        @Like purgatory {@public}
+[2006-02-02 15:14:45] OBSERVED Public TALK HeatherS    @nothing there {@Public}
+[2006-02-02 15:14:52] OBSERVED Public TALK HeatherS    @but, y'know... dead babies {@Public}
+[2006-02-02 15:14:56] OBSERVED public TALK Heds        @A void, empty {@public}
+[2006-02-02 15:14:59] OBSERVED Public TALK tims        @purgatory, vb. To vomit a conservative. {@Public}
+[2006-02-02 15:15:02] OBSERVED public TALK Heds        @then suddenly... {@public}
+[2006-02-02 15:15:04] OBSERVED Public TALK tims        @Sitting silent. {@Public}
+[2006-02-02 15:15:07] OBSERVED Public TALK HeatherS    @dict limbo {@Public}
+[2006-02-02 15:15:18] OBSERVED Public TALK tims        @urban limbo {@Public}
+[2006-02-02 15:15:20] OBSERVED Public TALK HeatherS    @aka dead babies {@Public}
+[2006-02-02 15:15:48] OBSERVED Public TALK HeatherS    @yay i'm so clever for an athiest {@Public}
+[2006-02-02 15:15:53] OBSERVED Public TALK tims        @limbo, hell's DMZ {@Public}
+[2006-02-02 15:16:01] OBSERVED Public TALK tims        @of couse you're clever, you're an atheist {@Public}
+[2006-02-02 15:16:18] OBSERVED Public EMOTE @ tims wonders what happens to unconcieved babies' souls {@Public}
+[2006-02-02 15:16:27] OBSERVED Public TALK Flux        @God keeps them in a jar. {@Public}
+[2006-02-02 15:16:32] OBSERVED Public TALK HeatherS    @) {@Public}
+[2006-02-02 15:16:47] OBSERVED Public TALK HeatherS    @and recycles them when the jar is full {@Public}
+[2006-02-02 15:17:37] OBSERVED Public TALK tims        @Oddly, urbandict appears here to be more helpful & comprehensive than Webster {@Public}
+[2006-02-02 15:17:46] OBSERVED Public EMOTE @ HeatherS nods {@Public}
+[2006-02-02 15:17:56] OBSERVED Public TALK HeatherS    @urban love {@Public}
+[2006-02-02 15:19:06] OBSERVED Public TALK HeatherS    @today's Twitch's 22 month birthday! {@Public}
+[2006-02-02 15:19:13] SHOUT tims        !eek eek
+[2006-02-02 15:20:04] OBSERVED Public TALK tims        @tims        :your fingers have autodamion enabled {@Public}
+[2006-02-02 15:20:07] OBSERVED Public TALK tims        @as in {@Public}
+[2006-02-02 15:20:19] OBSERVED Public TALK tims        @According to Damion> that's rubbish, ffs Conway's book, ... {@Public}
+[2006-02-02 15:27:08] OBSERVED Public TALK HeatherS    @http://www.stargazy.org/hamster/dwarfs/22mbdaycheerio.jpg {@Public}
+[2006-02-02 15:27:31] OBSERVED public TALK neech       @? {@public}
+[2006-02-02 15:27:36] OBSERVED Public TALK Flux        @Cute. {@Public}
+[2006-02-02 15:28:11] OBSERVED public TALK neech       @am i cute? {@public}
+[2006-02-02 15:28:25] OBSERVED Public EMOTE @ Flux takes the fifth. {@Public}
+[2006-02-02 15:28:45] OBSERVED Public EMOTE @ tims strokes neech {@Public}
+[2006-02-02 15:28:55] OBSERVED public TALK neech       @hamster donuts {@public}
+[2006-02-02 15:29:15] OBSERVED public TALK Heds        @no, neech isn't cute {@public}
+[2006-02-02 15:29:18] OBSERVED public TALK neech       @( {@public}
+[2006-02-02 15:29:21] OBSERVED public TALK Heds        @You're pretty {@public}
+[2006-02-02 15:29:25] OBSERVED public TALK Heds        @it's differnent {@public}
+[2006-02-02 15:29:29] OBSERVED public TALK Heds        @i can't spell {@public}
+[2006-02-02 15:29:30] OBSERVED public TALK neech       @yes {@public}
+[2006-02-02 15:29:38] OBSERVED public TALK neech       @one's an exageration and the other's a lie {@public}
+[2006-02-02 15:29:39] OBSERVED public EMOTE @ neech grins {@public}
+[2006-02-02 15:30:12] OBSERVED public TALK Heds        @pah {@public}
+[2006-02-02 15:30:26] OBSERVED public TALK Heds        @you are, if you choose not to accept it, that's your problem :) {@public}
+[2006-02-02 15:30:45] OBSERVED public TALK neech       @| {@public}
+[2006-02-02 15:30:50] OBSERVED public TALK neech       @( {@public}
+[2006-02-02 15:30:51] OBSERVED public TALK neech       @[ {@public}
+[2006-02-02 15:30:52] OBSERVED public EMOTE @ neech wails {@public}
+[2006-02-02 15:30:55] OBSERVED public TALK neech       @-( {@public}
+[2006-02-02 15:31:10] OBSERVED Public EMOTE @ Flux hugs neech. {@Public}
+[2006-02-02 15:31:11] OBSERVED public TALK neech       @-] {@public}
+[2006-02-02 15:31:14] OBSERVED Public EMOTE @ tims hugs neech too {@Public}
+[2006-02-02 15:31:23] OBSERVED Public EMOTE @ Flux hugs more. {@Public}
+[2006-02-02 15:31:27] OBSERVED public EMOTE @ neech is good at manipulating people {@public}
+[2006-02-02 15:31:33] OBSERVED Public TALK Flux        @</one_up_manship> {@Public}
+[2006-02-02 15:32:17] OBSERVED public TALK neech       @i have to fit meery with a new PSU tonight {@public}
+[2006-02-02 15:32:20] OBSERVED public TALK neech       @merry {@public}
+[2006-02-02 15:32:24] OBSERVED public TALK Heds        @oooo {@public}
+[2006-02-02 15:32:26] OBSERVED public TALK Heds        @BANG! {@public}
+[2006-02-02 15:32:27] OBSERVED public EMOTE @ Heds giggles {@public}
+[2006-02-02 15:32:33] OBSERVED public TALK neech       @i hope not {@public}
+[2006-02-02 15:32:38] OBSERVED public TALK Heds        @doubtful {@public}
+[2006-02-02 15:32:57] OBSERVED public TALK neech       @it cost more than 20p {@public}
+[2006-02-02 15:33:16] OBSERVED public EMOTE @ Heds grins {@public}
+[2006-02-02 15:33:40] OBSERVED public TALK neech       @heds {@public}
+[2006-02-02 15:33:44] OBSERVED public TALK neech       @will you upgrade me please? {@public}
+[2006-02-02 15:33:57] OBSERVED public TALK Heds        @it would be a pleasure {@public}
+[2006-02-02 15:34:09] OBSERVED public TALK neech       @[15:33]  tims        >have you considered a firmware upgrade? {@public}
+[2006-02-02 15:34:10] OBSERVED public EMOTE @ Heds gets the flathead set out {@public}
+[2006-02-02 15:34:13] OBSERVED public EMOTE @ neech grins {@public}
+[2006-02-02 15:34:28] OBSERVED public TALK neech       @i want the slide back sunroof head {@public}
+[2006-02-02 15:34:41] OBSERVED public TALK neech       @and splitscreen, slow motion and quantel {@public}
+[2006-02-02 15:34:48] OBSERVED public EMOTE @ Heds fiddles under neechi's hood {@public}
+[2006-02-02 15:35:16] OBSERVED public TALK neech       @i'd like to get jazz fm on my left nipple {@public}
+[2006-02-02 15:35:17] OBSERVED public TALK Heds        @Someone suggest a linux app to check the HD that isn't fsck {@public}
+[2006-02-02 15:35:29] OBSERVED public TALK neech       @bonnie {@public}
+[2006-02-02 15:35:33] OBSERVED public TALK neech       @oh {@public}
+[2006-02-02 15:35:35] OBSERVED public TALK neech       @checkl {@public}
+[2006-02-02 15:35:36] OBSERVED public EMOTE @ Heds fits an antenna to nicci's hair {@public}
+[2006-02-02 15:35:41] OBSERVED Public TALK Flux        @And Clyde. {@Public}
+[2006-02-02 15:35:41] OBSERVED public TALK neech       @not stress test? {@public}
+[2006-02-02 15:35:52] OBSERVED public TALK Heds        @Want to see how f*ked the disc is {@public}
+[2006-02-02 15:35:58] OBSERVED public TALK neech       @bonnie then {@public}
+[2006-02-02 15:36:03] OBSERVED public TALK neech       @googlefor linux hdd bonnie {@public}
+[2006-02-02 15:36:24] OBSERVED Public TALK tims        @SCSI, where the system disks are {@Public}
+[2006-02-02 15:36:27] OBSERVED public TALK neech       @tell it to full the disk {@public}
+[2006-02-02 15:36:32] OBSERVED public TALK Heds        @thank you :) {@public}
+[2006-02-02 15:36:38] OBSERVED public TALK neech       @you're welcome {@public}
+[2006-02-02 15:36:41] OBSERVED public TALK neech       @i r god {@public}
+[2006-02-02 15:36:42] OBSERVED public TALK neech       @init {@public}
+[2006-02-02 15:36:51] OBSERVED public TALK Heds        @well, you're complex {@public}
+[2006-02-02 15:36:59] OBSERVED Public TALK tims        @she moves mysteriously {@Public}
+[2006-02-02 15:37:55] OBSERVED public TALK neech       @it's coz i put my bodysuit on inside out this morning {@public}
+[2006-02-02 15:38:38] OBSERVED Public EMOTE @ HeatherS returns from letting Twitch run around in her exercise ball  {@Public}
+[2006-02-02 15:38:39] OBSERVED public TALK Heds        @do they still make bodys? {@public}
+[2006-02-02 15:38:47] OBSERVED public EMOTE @ Heds thought that was a fad during my early teen years {@public}
+[2006-02-02 15:38:48] OBSERVED public TALK neech       @yes {@public}
+[2006-02-02 15:38:50] OBSERVED Public TALK tims        @heds> yes, it's the only thing to put people in {@Public}
+[2006-02-02 15:38:59] OBSERVED public TALK neech       @i don't know where to buy them though {@public}
+[2006-02-02 15:39:03] OBSERVED public TALK neech       @i only know where to get them in the USA {@public}
+[2006-02-02 15:39:05] OBSERVED Public TALK tims        @the body shop? {@Public}
+[2006-02-02 15:39:07] OBSERVED public TALK neech       @but they don't export {@public}
+[2006-02-02 15:39:08] OBSERVED public TALK neech       @no {@public}
+[2006-02-02 15:39:15] OBSERVED public TALK neech       @they sell overpriced smelly stuff {@public}
+[2006-02-02 15:39:16] OBSERVED Public EMOTE @ HeatherS thought they had them at dance shops {@Public}
+[2006-02-02 15:39:23] OBSERVED public TALK neech       @that has been tested on animals but they pretend not {@public}
+[2006-02-02 15:39:27] OBSERVED public TALK neech       @go tell rain ;-) {@public}
+[2006-02-02 15:39:31] OBSERVED Public TALK tims        @no {@Public}
+[2006-02-02 15:39:32] OBSERVED Public TALK tims        @) {@Public}
+[2006-02-02 15:40:02] OBSERVED Public EMOTE @ tims likes their stuff & uses it {@Public}
+[2006-02-02 15:40:13] OBSERVED Public TALK tims        @"tested on tims" {@Public}
+[2006-02-02 15:40:30] OBSERVED public TALK neech       @hrm {@public}
+[2006-02-02 15:40:35] OBSERVED Public EMOTE @ Flux tests tims for truth. {@Public}
+[2006-02-02 15:40:59] OBSERVED Public EMOTE @ HeatherS likes Lush stuff {@Public}
+[2006-02-02 15:41:08] OBSERVED Public TALK HeatherS    @they are more smelly than body shop {@Public}
