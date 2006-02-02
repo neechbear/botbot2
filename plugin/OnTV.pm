@@ -33,6 +33,11 @@ sub handle {
 			sky_sports_xtra sky_three sky_travel tcm uk_bright_ideas uk_drama
 			uk_gold uk_history uk_style uktv_documentary uktv_people vh1);
 
+		$talker->whisper(
+				($event->{list} ? $event->{list} : $event->{person}),
+				"Hold on a jiffer, I'm just downloading the latest TV listings ..."
+			);
+
 		#my $url = 'http://www.bleb.org/tv/data/listings?days=0..6&format=XMLTV&channels=';
 		my $url = 'http://www.bleb.org/tv/data/listings?days=0..2&format=XMLTV&channels=';
 		$url .= join(',',grep(!/_(ireland|scotland|wales)$/,@channels));
