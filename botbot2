@@ -56,7 +56,11 @@ exit;
 
 sub event_callback {
 	my $talker = shift;
+
 	my $event = @_ % 2 ? { alarm => 1 } : { @_ };
+	return 0 if exists($event->{person}) &&
+				($event->{person} eq $config{username} ||
+				$event->{person} =~ /bot$/i);
 
 	my %plugins_responded = ();
 	for my $plugin (sort(load_plugins())) {
