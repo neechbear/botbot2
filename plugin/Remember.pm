@@ -16,7 +16,7 @@ sub handle {
 	$str =~ s/\s+/\.\*/g;
 
 	my @reply;
-	if (open(URL,"../data/url.log")) {
+	if (open(URL,"./data/url.log")) {
 		while (local $_ = <URL>) {
 			chomp;
 			if (/$str/i) {

@@ -16,7 +16,7 @@ sub handle {
 
 	} elsif ($event->{msgtype} =~ /^WHO(HDR)?$/) {
 		my $mode = /Users on .+ at the moment/ ? '>' : '>>';
-		my $file = "../data/who.log";
+		my $file = "./data/who.log";
 		if (open(FH, $mode, $file)) {
 			print FH "$event->{text}\n";
 			close(FH);

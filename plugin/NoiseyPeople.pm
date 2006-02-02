@@ -23,18 +23,18 @@ sub handle {
 		$uppercase_words++ if ($word =~ /[a-z]/i && uc($word) eq $word);
 	}
 
-	if ( (($uppercase_words / @words) * 100)
+	if ( ( ($uppercase_words / @words) * 100) > 80
 			&& $self->{counter}->{$event->{person}} <= 0) {
 		$self->{counter}->{$event->{person}} = 4;
 
 		if ($event->{person} =~ /zoe/i) {
 			$self->{talker}->say(
-					($event->{list} !~ /\@/ ? "<<$event->{list}" : '<@Public')." ".
+					($event->{list} !~ /\@/ ? "<$event->{list}" : '<@Public')." ".
 					"comforts $event->{person}. there there, shhhhhh it'll be okay"
 				);
 		} else {
 			$self->{talker}->say(
-					($event->{list} !~ /\@/ ? ">>$event->{list}" : '>@Public')." ".
+					($event->{list} !~ /\@/ ? ">$event->{list}" : '>@Public')." ".
 					"SHHHHHH!"
 				);
 		}

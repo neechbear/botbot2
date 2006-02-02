@@ -63,7 +63,7 @@ sub handle {
 		);
 
 	# Write the URL to our log
-	if (open(FH, "../data/url.log")) {
+	if (open(FH, "./data/url.log")) {
 		$title =~ s/\s+/ /g;
 		$title = '' if $title eq '[No title information available]';
 		$shorturl = '' if $shorturl eq $url;
@@ -71,7 +71,7 @@ sub handle {
 			time(), $event->{person}, $url, $shorturl, $event->{list}, $title);
 		close(FH);
 	} else {
-		warn "Unable to open file handle FH for file '../data/url.log': $!";
+		warn "Unable to open file handle FH for file './data/url.log': $!";
 	}
 
 	return 0;

@@ -16,7 +16,7 @@ sub handle {
 	my $str = join(' ',@{$event->{cmdargs}});
 
 	my $xs = new XML::Simple();
-	my $listings = $xs->XMLin("../data/blebtv/data.xml",
+	my $listings = $xs->XMLin("./data/blebtv/data.xml",
 						ForceArray => 1, KeyAttr => 'key');
 
 	my %channels;
