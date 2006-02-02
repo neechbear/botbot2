@@ -1,6 +1,7 @@
 package plugin::Iana;
 use base plugin;
 use strict;
+use URLTools;
 use Net::Whois::IANA;
 
 sub handle {

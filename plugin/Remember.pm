@@ -1,6 +1,7 @@
 package plugin::Remember;
 use base plugin;
 use strict;
+use URLTools;
 
 sub handle {
 	my ($self,$event,$responded) = @_;

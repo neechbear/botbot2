@@ -1,6 +1,7 @@
 package plugin::IMDB;
 use base plugin;
 use strict;
+use URLTools;
 use HTML::Strip;
 use LWP::UserAgent;
 

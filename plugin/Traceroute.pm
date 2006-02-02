@@ -1,6 +1,7 @@
-package plugin::HelloWorld;
+package plugin::Traceroute;
 use base plugin;
 use strict;
+use URLTools;
 
 sub handle {
 	my ($self,$event,$responded) = @_;
@@ -15,7 +16,7 @@ sub handle {
 	my $ip = isIP($event->{cmdargs}->[0]) ? $event->{cmdargs}->[0] :
 				(host2ip($event->{cmdargs}->[0]))[0];
 
-	unless (isIP($ip)) {
+	if (!isIP($ip)) {
 		$talker->whisper(
 				$event->{person},
 				"Sorry; $event->{cmdargs}->[0] isn't a valid host/IP"
