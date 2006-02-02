@@ -15,7 +15,6 @@ sub handle {
 
 	} elsif ($str =~ /^(\s*(?:hex|oct|dec|bin)\s+of\s+)?([pi\=\;\(\)\s\d\+\-\/\.\*\^\%]+)$/i) {
 		my $convert = $1 || 'dec';
-		warn "convert = $convert";
 
 		my $calc = $2;
 		$calc =~ s/pi/\(104348\/33215\)/gi;
@@ -23,10 +22,8 @@ sub handle {
 		if ($calc =~ s/[pi]//gi) {
 			$changed_calc++;
 		}
-		warn "calc = $calc";
 
 		my $result = eval "($calc)+1-1";
-		warn "result = $result";
 
 		# Convert the result to another base if necessary
 		if ($result =~ /^[0-9\.]+$/) {
@@ -41,8 +38,6 @@ sub handle {
 				$Xresult = unpack("B*", pack("N", $result));
 			}
 			$result = $Xresult;
-			warn "result = $result";
-			warn "Xresult = $Xresult";
 		}
 
 		if (!$@ && length($result)) {
