@@ -7,6 +7,12 @@ use HTML::Strip;
 use Image::Info;
 use File::Type;
 use Socket;
+use Exporter;
+
+use vars qw(@ISA @EXPORT @EXPORT_OK);
+@ISA = qw(Exporter);
+@EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip);
+@EXPORT = @EXPORT_OK;
 
 sub getHtmlTitle {
 	my $url = shift || undef;
