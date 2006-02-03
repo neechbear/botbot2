@@ -13,6 +13,14 @@ sub handle {
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 
 	my $talker = $self->{talker};
+	return _quote($self->{talker},$event) if $event->{command} =~ /quote/i;
+	return _imdb($self->{talker},$event);
+}
+
+sub _quote {
+	my ($talker,$event) = @_;
+
+	return 0 if $event->{msgtype} ne 'TELL';
 
 	# Create an LWP object to work with
 	my $ua = LWP::UserAgent->new(
@@ -26,10 +34,8 @@ sub handle {
 		$id = $event->{cmdargs}->[0];
 	} else {
 		my ($popular,@matches) = searchIMDB(join(' ', @{$event->{cmdargs}}));
-		warn $_ for @matches;
 		if (@matches && $matches[0] =~ /\s*(\d{7})\s*/) {
 			$id = $1;
-			warn $id;
 		}
 	}
 
@@ -75,8 +81,7 @@ sub handle {
 }
 
 sub _imdb {
-	my $talker = shift;
-	my $event = { @_ };
+	my ($talker,$event) = @_;
 
 	# Lookup a specific IMDB ID reference
 	if (defined $event->{cmdargs}->[0] && $event->{cmdargs}->[0] =~ /^\d{7}$/) {
