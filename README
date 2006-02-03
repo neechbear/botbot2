@@ -1,0 +1,25 @@
+Requires the following modules:
+
+Colloquy::Bot::Simple
+Colloquy::Data
+Config::General
+Data::Dumper
+Exporter
+File::Basename
+File::Type
+FileHandle
+Finance::Currency::Convert::XE
+FindBin
+HTML::Entities
+HTML::Strip
+Image::Info
+LWP::Simple
+LWP::UserAgent
+Module::Pluggable(
+Net::Dict
+Net::Whois::IANA
+Socket
+URLTools
+WWW::Search
+XML::Simple
+
