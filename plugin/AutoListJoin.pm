@@ -14,8 +14,8 @@ sub handle {
 			$self->{talker}->say('.lists');
 		}
 
-	} elsif ($event->{msgtype} eq 'LISTS') {
-		for my $list (grep(!/^\*/,@{$event->{args}})) {
+	} elsif ($event->{msgtype} =~ /^LISTINFOLIST|LISTS$/) {
+		for my $list (grep(!/^(\*|\+)/,@{$event->{args}})) {
 			$self->{talker}->say(".list join $list");
 		}
 
