@@ -8,6 +8,7 @@ sub handle {
 
 	return if $event->{alarm};
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|OBSERVE EMOTE|EMOTE|TALK|TELL|LISTEMOTE|LISTTALK$/;
+	return unless ($event->{text} =~ /https?:\/\/\S+/i || $event->{text} =~ /\bwww\.\S+/i);
 
 	my $talker = $self->{talker};
 
@@ -58,7 +59,7 @@ sub handle {
 		);
 
 	# Write the URL to our log
-	if (open(FH, "./data/url.log")) {
+	if (open(FH, ">>./data/url.log")) {
 		$title =~ s/\s+/ /g;
 		$title = '' if $title eq '[No title information available]';
 		$shorturl = '' if $shorturl eq $url;
