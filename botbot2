@@ -41,6 +41,11 @@ my $talker = Colloquy::Bot::Simple->new(
 		password => $config{password} || 'changeme',
 		host     => $config{host}     || '127.0.0.1',
 		port     => $config{port}     || '1236',
+		( $config{nilex} ? (
+				LoginSuccess => 'WELCOME',
+				UsernamePrompt => '\+\+\+ separated by a
+				space\.'
+			) : () ),
 	);
 alarm 0;
 
