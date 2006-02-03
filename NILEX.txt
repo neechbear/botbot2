@@ -1,0 +1,12 @@
++++ Please enter your name (max 10 chars, with no spaces)
++++ If you have an account, you should supply the password after your name,
++++ separated by a space.
+BotBot password
+FLAGS Setting Defaults: Beep On, Cr On, Echo Off, Terminal Client, Colours, TimeWarn: 0
+WELCOME This is the User MOTD
+CONNECT You have connected (Invis) on line 27.
+LOOKHDR Users in group Bots-R-Us:
+LOOK  statusbot(G)  iflstatus(P)  TravelBot(P)  BotBot(P)
+COMMENT pkent: IF&L Recruit: https://jobs.bbc.co.uk/JobPortal/Search/vacancy.aspx?id=6680
+TELL Damion      >www.bbc.co.uk
+DONETELL Whispered to Damion: 'hello :)'
