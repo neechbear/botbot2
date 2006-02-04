@@ -3,6 +3,8 @@ use base plugin;
 use strict;
 use URLTools;
 
+our $DESCRIPTION = "Shortens URLs to 'TinyURL's and displays web site titles";
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

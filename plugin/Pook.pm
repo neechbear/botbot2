@@ -2,6 +2,8 @@ package plugin::Pook;
 use base plugin;
 use strict;
 
+our $DESCRIPTION = 'Pooks like a fish with other people do';
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

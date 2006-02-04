@@ -3,6 +3,8 @@ use base plugin;
 use strict;
 use URLTools;
 
+our $DESCRIPTION = 'Remember URLs that people have mentioned';
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

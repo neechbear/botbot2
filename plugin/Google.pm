@@ -4,6 +4,8 @@ use strict;
 use WWW::Search;
 use HTML::Strip;
 
+my $DESCRIPTION = 'Return the first google result for a search term';
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

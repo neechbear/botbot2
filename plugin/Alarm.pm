@@ -2,6 +2,8 @@ package plugin::Alarm;
 use base plugin;
 use strict;
 
+our $DESCRIPTION = 'NOOP';
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 	if ($event->{'alarm'}) {

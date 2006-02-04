@@ -13,7 +13,9 @@ sub handle {
 	return unless $event->{text} =~ /^list\s*plugins?\s*$/i;
 
 	for my $plugin (grep(/^plugin\//,sort(keys(%INC)))) {
-		my $desc = eval("\$${plugin}::DESCRIPTION") || '';
+		(my $ns = $plugin) =~ s/\//::/g;
+		$ns =~ s/\.pm//;
+		my $desc = eval("\$${ns}::DESCRIPTION") || '';
 		$self->{talker}->whisper(
 				$event->{list} ? $event->{list} : $event->{person},
 				$plugin . ( $desc ? " - $desc" : '' )
