@@ -4,6 +4,7 @@ Colloquy::Bot::Simple
 Colloquy::Data
 Config::General
 Data::Dumper
+DBD::SQLite
 Exporter
 File::Basename
 File::Type
