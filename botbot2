@@ -32,7 +32,11 @@ chdir($Bin) || die "Unable to change directory to $Bin: $!";
 
 my ($basename, $dirname, $extension) = fileparse($0, '\.[^\.]+');
 my $cfg_file = "$dirname$basename.cfg";
-my $conf = new Config::General($cfg_file);
+my $conf = new Config::General(
+					-UseApacheInclude => 1,
+					-IncludeRelative => 1,
+					-ConfigFile => $cfg_file
+				);
 my %config = $conf->getall;
 
 alarm 10;
