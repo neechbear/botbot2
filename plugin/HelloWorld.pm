@@ -1,6 +1,9 @@
 package plugin::HelloWorld;
 use base plugin;
 use strict;
+use vars qw($DESCRIPTION);
+
+$DESCRIPTION = 'Say hello when greeted in private';
 
 sub handle {
 	my ($self,$event,$responded) = @_;
@@ -9,9 +12,22 @@ sub handle {
 	return unless $event->{command} =~ /wassup|yo|hi'?ya|hi|hello/i;
 	return unless $event->{msgtype} eq 'TELL';
 
+	my @responses = (
+			"howdie",
+			"hi",
+			"wazzaaaaaaaaaaaaaap?",
+			"*hugs*",
+			"how's things?",
+			"It's a $event->{person}!",
+			"Hi $event->{person}",
+			'wasup?',
+			'hello',
+			':)',
+		);
+
 	$self->{talker}->whisper(
 			$event->{list} ? $event->{list} : $event->{person},
-			"Hello $event->{person}, you slag!",
+			$responses[int(rand(@responses))],
 		);
 
 	return "I said hello";
