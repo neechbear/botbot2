@@ -38,6 +38,10 @@ sub handle {
 					|| 'London, United Kingdom';
 	}
 
+	unless ($arg =~ /\s+/ || $arg =~ /,/) {
+		$arg .= ', United Kingdom';
+	}
+
 	if (my $locations = $cached_weather->search($arg)) {
 
 		# I know, ... i might do something other than just return one day
