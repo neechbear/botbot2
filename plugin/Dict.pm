@@ -3,7 +3,7 @@ use base plugin;
 use strict;
 use Net::Dict;
 
-our $DICTIONARY = 'Return a dictionary definition of a word from dict.org';
+our $DESCRIPTION = 'Return a dictionary definition of a word from dict.org';
 
 sub handle {
 	my ($self,$event,$responded) = @_;

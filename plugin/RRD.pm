@@ -4,7 +4,7 @@ use strict;
 use integer;
 use RRD::Simple;
 
-our $DICTIONARY = 'Log talker usage statistics to an RRD file';
+our $DESCRIPTION = 'Log talker usage statistics to an RRD file';
 
 sub handle {
 	my ($self,$event,$responded) = @_;

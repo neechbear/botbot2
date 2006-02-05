@@ -11,19 +11,14 @@ use Exporter;
 
 use vars qw(@ISA @EXPORT @EXPORT_OK);
 @ISA = qw(Exporter);
-@EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip);
+@EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip UserAgent);
 @EXPORT = @EXPORT_OK;
 
 sub getHtmlTitle {
 	my $url = shift || undef;
 	return '[No title information available]' unless defined $url;
 
-	# Create an LWP object to work with
-	my $ua = LWP::UserAgent->new(
-			agent => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050718 Firefox/1.0.4 (Debian package 1.0.4-2sarge1)',
-			max_size => 102400,
-			timeout => 10
-		);
+	my $ua = UserAgent();
 
 	# Go and get the URL they spoke about
 	my $response = $ua->get($url);
@@ -71,14 +66,20 @@ sub getHtmlTitle {
 	return ($title,$response);
 }
 
+sub UserAgent {
+	my $ua = LWP::UserAgent->new(
+			agent => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050718 Firefox/1.0.4 (Debian package 1.0.4-2sarge1)',
+			max_size => 102400,
+			timeout => 4,
+		);
+	return $ua;
+}
+
 sub tinyURL {
 	my $url = shift || undef;
 	return undef unless defined $url;
 
-	my $ua = LWP::UserAgent->new(
-			agent => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050718 Firefox/1.0.4 (Debian package 1.0.4-2sarge1)',
-			timeout => 10
-		);
+	my $ua = UserAgent();
 
 	my $shorturl = $url;
 	unless ($shorturl =~ m#^https?://(tinyurl\.com|shrunk\.net)/[\w\d]+/?#i) {

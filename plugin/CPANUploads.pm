@@ -2,7 +2,7 @@ package plugin::CPANUploads;
 use base plugin;
 use strict;
 
-our $DICTIONARY = 'Periodically reports new uploads to CPAN';
+our $DESCRIPTION = 'Periodically reports new uploads to CPAN';
 
 sub handle {
 	my ($self,$event,$responded) = @_;

@@ -2,7 +2,7 @@ package plugin::NewsFeed;
 use base plugin;
 use strict;
 
-our $DICTIONARY = 'Periodically report new headlines from RSS news feeds';
+our $DESCRIPTION = 'Periodically report new headlines from RSS news feeds';
 
 sub handle {
 	my ($self,$event,$responded) = @_;
