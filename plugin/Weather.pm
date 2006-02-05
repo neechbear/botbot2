@@ -2,6 +2,7 @@ package plugin::Weather;
 use base plugin;
 use strict;
 use Weather::Cached;
+use Colloquy::Data qw(:all);
 
 our $DESCRIPTION = 'Return weather information from weather.com';
 
@@ -28,6 +29,14 @@ sub handle {
 
 	my $cached_weather = Weather::Cached->new(%params);
 	my $arg = join(' ',@{$event->{cmdargs}});
+	$arg =~ s/^\s+|\s+$//g;
+
+	unless ($arg) {
+		my $colloquy_datadir = "/home/system/colloquy/data";
+		my ($users_hashref,$lists_hashref) = users($colloquy_datadir);
+		$arg = $users_hashref->{$event->{person}}->{location}
+					|| 'London, United Kingdom';
+	}
 
 	if (my $locations = $cached_weather->search($arg)) {
 
@@ -71,7 +80,7 @@ sub handle {
 					($event->{list} ? $event->{list} : $event->{person}),
 					$_
 				) for @reply;
-			return "Returned weather information for @{$event->{cmdargs}}";
+			return "Returned weather information for $arg";
 		}
 
 	} else {
