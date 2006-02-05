@@ -93,7 +93,8 @@ sub handle {
 
 sub timshack {
 	my @out = @_;
-	s/(\d+)(\s*)F/_ftoc($1).$2."C"/ge for @out;
+#	s/(\d+)(\s*)F/_ftoc($1).$2."C"/ge for @out;
+	s/(\-?\d+)(\s*)F/_ftoc($1).$2."C"/ge for @out;
 	return @out;
 }
 
