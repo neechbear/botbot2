@@ -1,23 +1,25 @@
 package plugin::Factoids;
 use base plugin;
 use strict;
-use lib "/Users/ti/Documents/tech/ork/factfinder/lib";
 use FactStore;
+
+our $DESCRIPTION = 'InfoBot-like factoid plugin';
 
 sub factstore {
   my $self = shift;
   return $self->{_fs} if $self->{_fs};
-  $self->{_fs} = FactStore->new("data/factoids.sqi");
+  $self->{_fs} = FactStore->new('./data/factoids.sqi');
   return $self->{_fs};
 }
 
 sub handle {
 	my ($self,$event,$responded) = @_;
-	# doesn't work with lists at the mo
+
 	return if $event->{alarm};
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
-	my $incoming = $event->{text};
-	warn "Factoids: I hear $incoming";
+
+	(my $incoming = $event->{text}) =~ s/^\s+|\s+$//g;
+	$incoming =~ s/\s\s+/\s/g;
 	return if !$incoming;
 	my $i_say = $self->factstore->chat($incoming);
 	
@@ -26,8 +28,10 @@ sub handle {
 				($event->{list} ? $event->{list} : $event->{person}),
 				$i_say
 			);
+		return "fact, fact, fact";
 	}
-	return "fact, fact, fact";
+
+	return 0;
 }
 
 1;
