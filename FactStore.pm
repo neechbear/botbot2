@@ -5,6 +5,7 @@ use DBI;
 sub new {
     my ($class, $filename) = @_;
     $class = ref $class || $class;
+	die "Suspect sqi filename" unless $filename =~ /^[\.\/a-zA-Z0-9\_\-]+$/;
     my $dbh = DBI->connect("dbi:SQLite:dbname=$filename", "", "", {RaiseError => 1, PrintWarn => 0, PrintError => 0});
     my $self = { dbh => $dbh };
     bless $self, $class;
@@ -36,11 +37,16 @@ sub store_fact {
 };
 
 sub _store_fact {
-    my ($self, $thing1, $verb, $thing2) = @_;
-    my $sth = $self->dbh->prepare("INSERT OR REPLACE INTO facts (thing1c, thing2c, thing1, verb, thing2) VALUES (?,?,?,?,?)");
+    my ($self, $correction, $thing1, $verb, $thing2) = @_;
     my $thing1c = $self->canonicalise($thing1);
     my $thing2c = $self->canonicalise($thing2);
-    $sth->execute($thing1c, $thing2c, $thing1, $verb, $thing2);
+	if ($correction) {
+		my $sth = $self->dbh->prepare('DELETE FROM facts WHERE thing1c = ?');
+		$sth->execute($thing1c);
+	}
+	my $sth = $self->dbh->prepare("INSERT OR REPLACE INTO facts
+		(thing1c, thing2c, thing1, verb, thing2) VALUES (?,?,?,?,?)");
+	$sth->execute($thing1c, $thing2c, $thing1, $verb, $thing2);
 }
 
 sub init_db {
@@ -91,17 +97,21 @@ sub canonicalise {
 }
 
 sub _parse_line_core {
-    my ($self, $line) = @_;
-    $line =~ s/\s+$//s;
-    $line =~ s/^\s+//s;
-    my @out;
-    push @out, [$1, $2, $3] while ($line =~ /(.+)\W+(is|are)\W+(.+?)([\.\!\?] | $ )/gx);
-    return @out;
+	my ($self, $line) = @_;
+	$line =~ s/\s+$//s;
+	$line =~ s/^\s+//s;
+	my @out;
+	while ($line =~ /(no\s*,\s+)?(.+)\W+(
+		is|are|comes|has|won'?t|usually|does(?:n'?t)
+			)\W+(.+?)([\.\!\?] | $ )/igx) {
+		push @out, [$1, $2, $3, $4];
+	}
+	return @out;
 }
 
 sub _parse_query {
     my ($self, $line) = @_;
-    if ($line =~ /^(what\'s|what\s+is|what\s+are)\s+(.+?)\??$/) { return $2 }
+    if ($line =~ /^(what\'s|what\s+is|what\s+are)\s+(.+?)\??$/i) { return $2 }
     elsif ($line =~ /^(.+)\?$/) { return $1 };
     return;
 }
