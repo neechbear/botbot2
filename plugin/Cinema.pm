@@ -35,21 +35,22 @@ sub handle {
 	my $url = sprintf('http://www.google.co.uk/movies?oi=showtimesm&hl=en&near=%s&dq=%s',
 					uri_escape($location), uri_escape($movie));
 	my $ua = UserAgent();
+	my $response = $ua->get($url);
 
-	if (0) {
-			$self->{talker}->whisper(
-					($event->{list} ? $event->{list} : $event->{person}),
-					$_
-				) for timshack(@reply);
-			return "Returned weather information for $arg";
-		}
-
-	} else {
+	if (!$response->is_success()) {
 		$self->{talker}->whisper($event->{person},
 				"Sorry; I couldn't find any appropriate showings of $movie"
 			);
 		return 0;
-	} 
+	}
+
+	my @reply = ();
+	$self->{talker}->whisper(
+			($event->{list} ? $event->{list} : $event->{person}),
+			$_
+		) for @reply;
+
+	return "Returned weather information for $arg";
 }
 
 1;
