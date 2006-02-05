@@ -90,13 +90,28 @@ sub canonicalise {
     return lc $word;
 }
 
+sub _parse_line_core {
+    my ($self, $line) = @_;
+    $line =~ s/\s+$//s;
+    $line =~ s/^\s+//s;
+    my @out;
+    push @out, [$1, $2, $3] while ($line =~ /(.+)\W+(is|are)\W+(.+?)([\.\!\?] | $ )/gx);
+    return @out;
+}
+
+sub _parse_query {
+    my ($self, $line) = @_;
+    if ($line =~ /^(what\'s|what\s+is|what\s+are)\s+(.+?)\??$/) { return $2 }
+    elsif ($line =~ /^(.+)\?$/) { return $1 };
+    return;
+}
+
 sub parse_line {
     my ($self, $line) = @_;
     chomp $line;
     my $found = 0;
-    while ($line =~ /(.+)\W+(is|are)\W+(.+?)([\.\!\?] | $ )/gx)
-    {
-	$self->store_fact($1, $2, $3);
+    foreach my $factoid ($self->_parse_line_core($line)) {
+	$self->store_fact(@$factoid);
 	$found++;
     };
     return $found;
@@ -105,9 +120,8 @@ sub parse_line {
 sub chat {
     my ($self, $they_said) = @_;
     my $i_say;
-    if ($they_said =~ /^(.+)\?$/) {
-	# interpret as query
-	$i_say = $self->random_query($1);
+    if (my $q = $self->_parse_query($they_said)) {
+	$i_say = $self->random_query($q);
     }
     $self->parse_line($they_said);
     return $i_say if defined $i_say;
