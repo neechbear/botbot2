@@ -3,11 +3,13 @@ use base plugin;
 use strict;
 use URLTools;
 
+our $DESCRIPTION = 'Perform a traceroute to a remote host';
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
-	return unless $event->{command} =~ /^traceroute|tracert$/i;
+	return unless $event->{command} =~ /^(traceroute|tracert)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 
 	my $talker = $self->{talker};

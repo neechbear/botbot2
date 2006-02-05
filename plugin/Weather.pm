@@ -11,7 +11,7 @@ sub handle {
 
 	return if $event->{alarm};
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
-	return unless $event->{command} =~ /^weather|forecast$/i;
+	return unless $event->{command} =~ /^(weather|forecast)$/i;
 
 	my $cachedir = './data/weathercache/';
 	mkdir $cachedir unless -e $cachedir;

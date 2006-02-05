@@ -8,7 +8,7 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
-	return unless $event->{command} =~ /^iana|whois$/i;
+	return unless $event->{command} =~ /^(iana|whois)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 
 	my $talker = $self->{talker};

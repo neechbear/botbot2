@@ -10,7 +10,7 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
-	return unless $event->{command} =~ /^googlefor|google|search$/i;
+	return unless $event->{command} =~ /^(googlefor|google|search)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 
 	my $talker = $self->{talker};

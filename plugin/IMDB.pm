@@ -9,7 +9,7 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
-	return unless $event->{command} =~ /^imdb|imdbquote|movie|moviequote$/i;
+	return unless $event->{command} =~ /^(imdb|imdbquote|movie|moviequote)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 
 	my $talker = $self->{talker};
