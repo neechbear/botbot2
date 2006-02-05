@@ -79,7 +79,7 @@ sub handle {
 			$self->{talker}->whisper(
 					($event->{list} ? $event->{list} : $event->{person}),
 					$_
-				) for @reply;
+				) for timshack(@reply);
 			return "Returned weather information for $arg";
 		}
 
@@ -89,6 +89,17 @@ sub handle {
 			);
 		return 0;
 	} 
+}
+
+sub timshack {
+	my @out = @_;
+	s/(\d+)(\s*)F/_ftoc($1).$2."C"/ge for @out;
+	return @out;
+}
+
+sub _ftoc {
+	my $f = shift;
+	return int(($f-32)/9*5+.5);
 }
 
 1;
