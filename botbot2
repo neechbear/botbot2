@@ -33,10 +33,15 @@ chdir($Bin) || die "Unable to change directory to $Bin: $!";
 my ($basename, $dirname, $extension) = fileparse($0, '\.[^\.]+');
 my $cfg_file = "$dirname$basename.cfg";
 my $conf = new Config::General(
-					-UseApacheInclude => 1,
-					-IncludeRelative => 1,
-					-ConfigFile => $cfg_file
-				);
+		-ConfigFile => $cfg_file,
+		-UseApacheInclude => 1,
+		-IncludeRelative => 1,
+		-LowerCaseNames => 1,
+		-MergeDuplicateBlocks => 1,
+		-AllowMultiOptions => 1,
+		-MergeDuplicateOptions => 1,
+		-AutoTrue  => 1,
+	);
 my %config = $conf->getall;
 
 alarm 10;
@@ -100,12 +105,20 @@ sub load_plugins {
 		}
 	}
 	if (!@PLUGIN_CACHE) {
+		@PLUGIN_CACHE = ();
 		eval {
-			@PLUGIN_CACHE = __PACKAGE__->plugins(
-							talker => $talker,
-							root => $dirname,
-							logfile => "$dirname/logs/$config{username}.log",
-						);
+			for my $plugin ( __PACKAGE__->plugins(
+								talker => $talker,
+								root => $dirname,
+								logfile => "$dirname/logs/$config{username}.log",
+							) ) {
+				my ($friendly) = ref($plugin) =~ m/^plugin(?:\/|\:\:)(\S+)(?:\.pm)?$/;
+				if (exists($config{plugins}->{lc($friendly)}) &&
+						$config{plugins}->{lc($friendly)} =~ /^disabled?$/i) {
+					next;
+				}
+				push @PLUGIN_CACHE, $plugin;
+			}
 		};
 		$LAST_LOADED = time unless $@;
 		warn "Loaded plugin ".ref($_)."\n" for sort(@PLUGIN_CACHE);

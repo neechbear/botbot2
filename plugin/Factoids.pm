@@ -26,7 +26,7 @@ sub handle {
 	if (defined $i_say) {
 		$self->{talker}->whisper(
 				($event->{list} ? $event->{list} : $event->{person}),
-				$i_say
+				(split(/\s*\n\s*/,$i_say))[0]
 			);
 		return "fact, fact, fact";
 	}
