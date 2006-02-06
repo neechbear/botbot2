@@ -20,6 +20,7 @@ sub handle {
 		$url = $1;
 	}
 	$url = "http://$url" unless $url =~ /^https?:\/\//i;
+	return 0 if length($url) < 70 && $self->{config}->{ignore_short_urls};
 
 	# Check that the URL at least has a valid hostname or IP address
 	if ($url =~ /https?:\/\/(?:\w+?:\w+?@)?([a-zA-Z0-9-\.]+)(:\d+)?/) {
