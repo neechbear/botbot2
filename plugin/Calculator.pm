@@ -9,7 +9,7 @@ sub handle {
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 
 	my $str = $event->{text};
-	if ($str =~ /^[\s=0-9pi]+$/i && lc($str) ne 'pi') {
+	if ($str =~ /^[\s=\.0-9pi]+$/i && lc($str) ne 'pi') {
 		# Just a number
 		# NOOP
 
