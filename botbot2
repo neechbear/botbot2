@@ -110,6 +110,7 @@ sub load_plugins {
 			for my $plugin ( __PACKAGE__->plugins(
 								talker => $talker,
 								root => $dirname,
+								conifg => \%config,
 								logfile => "$dirname/logs/$config{username}.log",
 							) ) {
 				my ($friendly) = ref($plugin) =~ m/^plugin(?:\/|\:\:)(\S+)(?:\.pm)?$/;
