@@ -4,6 +4,11 @@ use strict;
 use Net::Dict;
 
 our $DESCRIPTION = 'Return a dictionary definition of a word from dict.org';
+our %CMDHELP = (
+		'define <query>    ' => 'Get a definition of <query> from dictionary.com',
+		'dictionary <query>' => 'Alias for define',
+		'dict <query>      ' => 'Alias for define',
+	);
 
 sub handle {
 	my ($self,$event,$responded) = @_;

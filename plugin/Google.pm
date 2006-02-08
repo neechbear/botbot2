@@ -4,7 +4,12 @@ use strict;
 use WWW::Search;
 use HTML::Strip;
 
-my $DESCRIPTION = 'Return the first google result for a search term';
+our $DESCRIPTION = 'Return the first google result for a search term';
+our %CMDHELP = (
+		'google <query>   ' => 'Search google using the search term <query>',
+		'googlefor <query>' => 'Alias of google',
+		'search <query>   ' => 'Alias of google',
+	);
 
 sub handle {
 	my ($self,$event,$responded) = @_;
