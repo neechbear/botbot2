@@ -25,9 +25,9 @@ sub handle {
 				title => 'Talker Activity',
 				width => 560,
 				vertical_label => 'Messages per minute',
-				slope_mode => undef,
+#				slope_mode => undef,
 				units_exponent => 0,
-				interlaced => undef,
+#				interlaced => undef,
 				line_thickness => 1,
 				source_labels => {
 						GROUP => '@Public',
@@ -53,9 +53,8 @@ sub handle {
 		$self->{alarmcounter} = 0;
 	}
 
-	return unless $event->{msgtype} =~ /^(OBSERVE |TALK|TELL|SHOUT|LIST)/;
-
-	$self->{counter}->{GROUP}++   if $event->{msgtype} =~ /^(OBSERVE |TALK)/;
+	return unless $event->{msgtype} =~ /^(OBSERVE|TALK|TELL|SHOUT|LIST)/;
+	$self->{counter}->{GROUP}++   if $event->{msgtype} =~ /^(OBSERVE|TALK)/;
 	$self->{counter}->{PRIVATE}++ if $event->{msgtype} eq 'TELL';
 	$self->{counter}->{LIST}++    if $event->{msgtype} =~ /^LIST/;
 	$self->{counter}->{SHOUT}++   if $event->{msgtype} eq 'SHOUT';
@@ -70,9 +69,18 @@ sub handle {
 	}
 
 	if ($self->{lastchunk} ne $self->{chunk}) {
-		$self->{rrd}->update($self->{rrdfile},$self->{chunk},
-				map { $_ => $self->{counter}->{$_} } keys %{$self->{counter}}
-			);
+
+		warn "\n";
+		warn "lastchunk ($self->{lastchunk}) ne chunk ($self->{chunk})\n";
+		use Data::Dumper;
+		warn Dumper($self->{counter});
+
+		eval {
+			$self->{rrd}->update($self->{rrdfile},$self->{chunk},
+					map { $_ => $self->{counter}->{$_} } keys %{$self->{counter}}
+				);
+		};
+
 		$self->{counter} = {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
 	}
 
