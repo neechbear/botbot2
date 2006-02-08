@@ -2,7 +2,7 @@ package plugin::RRD;
 use base plugin;
 use strict;
 use integer;
-use RRD::Simple;
+use RRD::Simple 1.32;
 
 our $DESCRIPTION = 'Log talker usage statistics to an RRD file';
 
