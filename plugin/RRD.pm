@@ -12,7 +12,7 @@ sub handle {
 	$self->{chunk} = (time()/60)*60;
 	$self->{lastchunk} ||= $self->{chunk};
 
-	$self->{rrdfile} ||= './activity.rrd';
+	$self->{rrdfile} ||= './data/activity.rrd';
 	$self->{rrd} ||= new RRD::Simple;
 
 	$self->{counter} ||= {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
@@ -33,11 +33,13 @@ sub handle {
 						GROUP => '@Public',
 						SHOUT => '!shouts',
 						LIST => '%lists',
+						PRIVATE => '>BotBot',
 					},
 				source_colors => {
 						GROUP => '0000cc',
 						SHOUT => 'cc0000',
 						LIST => '00cc00',
+						PRIVATE => 'ffd700',
 					},
 				color => [ (
 						'BACK#d5e5FF',
