@@ -15,8 +15,18 @@ sub factstore {
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	if ($event->{alarm} && defined($self->{quiet})) {
+		$self->{quiet}-- if $self->{quiet};
+		return 0;
+	}
+
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
+	return if $self->{quiet};
+
+	if ($event->{text} =~ /^$self->{config}->{username}\s*,?\s+(shh+|quiet|shutup|shush|stfu)/i) {
+		$self->{quiet} = 60;
+		return 0;
+	}
 
 	(my $incoming = $event->{text}) =~ s/^\s+|\s+$//g;
 	$incoming =~ s/\s\s+/\s/g;
