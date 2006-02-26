@@ -94,9 +94,9 @@ sub _random_query {
     # if we keep saying the same thing, which will happen sometimes with
     # randomness. So we pick the least-recently-said 40% (.4) of the relevant
     # facts, and say one of them.
-    $howmany = int($howmany * .4 + .5);
-    $howmany = 1 if !$howmany;
-    my $retrieve = $dbh->selectall_arrayref("select factid, thing1, verb, thing2 from facts where thing1c = ".$dbh->quote($query)." order by lastsaid, thing1c, thing2c limit $howmany");
+    my $window = int($howmany * .4 + .5);
+    $window = 1 if !$window;
+    my $retrieve = $dbh->selectall_arrayref("select factid, thing1, verb, thing2 from facts where thing1c = ".$dbh->quote($query)." order by lastsaid, thing1c, thing2c limit $window");
     return if !@$retrieve;
     my $which = (@$retrieve > 1) ? int(rand(@$retrieve - 1)+.5) : 0;
     my $hwhich = $which + 1;
