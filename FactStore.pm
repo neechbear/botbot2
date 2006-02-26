@@ -1,6 +1,7 @@
 package FactStore;
 use strict;
 use DBI;
+use Carp;
 
 sub new {
     my ($class, $filename) = @_;
@@ -45,8 +46,8 @@ sub _store_fact {
 		$sth->execute($thing1c);
 	}
 	my $sth = $self->dbh->prepare("INSERT OR REPLACE INTO facts
-		(thing1c, thing2c, thing1, verb, thing2) VALUES (?,?,?,?,?)");
-	$sth->execute($thing1c, $thing2c, $thing1, $verb, $thing2);
+		(thing1c, thing2c, thing1, verb, thing2, lastsaid) VALUES (?,?,?,?,?,?)");
+	$sth->execute($thing1c, $thing2c, $thing1, $verb, $thing2, time());
 }
 
 sub init_db {
@@ -54,12 +55,14 @@ sub init_db {
     $self->dbh->do
 	(qq(
 	    create table facts (
+				factid integer PRIMARY KEY AUTOINCREMENT,
 				thing1c varchar(150),
 				thing2c varchar(150),
 				thing1 varchar(150),
 				verb varchar(10),
 				thing2 varchat(150),
-				primary key (thing1c, thing2c)
+				lastsaid integer,
+				unique (thing1c, thing2c)
 				)));
 }
 
@@ -83,15 +86,29 @@ sub _random_query {
     my ($self, $query) = @_;
     $query = $self->canonicalise($query);
     my $dbh = $self->dbh;
-    my $retrieve = $dbh->selectall_arrayref("select thing1, verb, thing2 from facts where thing1c = ".$dbh->quote($query)." order by thing1c, thing2c");
+    my ($howmany) = $dbh->selectall_arrayref("select count(factid) from facts where thing1c = ".$dbh->quote($query));
+    $howmany = $howmany->[0]->[0]; # Hmm, there's probably a nicer way
+    return if !$howmany;
+
+    # Retrieval algorithm: we want to be somewhat random, but it's boring
+    # if we keep saying the same thing, which will happen sometimes with
+    # randomness. So we pick the least-recently-said 40% (.4) of the relevant
+    # facts, and say one of them.
+    $howmany = int($howmany * .4 + .5);
+    $howmany = 1 if !$howmany;
+    my $retrieve = $dbh->selectall_arrayref("select factid, thing1, verb, thing2 from facts where thing1c = ".$dbh->quote($query)." order by lastsaid, thing1c, thing2c limit $howmany");
     return if !@$retrieve;
     my $which = (@$retrieve > 1) ? int(rand(@$retrieve - 1)+.5) : 0;
     my $hwhich = $which + 1;
-    return ((join " ", @{$retrieve->[$which]})." ($hwhich of ".(scalar @$retrieve).")");
+    my $picked = $retrieve->[$which];
+    my $factid = shift @$picked;
+    $dbh->do("update facts set lastsaid = ".time." where factid = ".$factid);
+    return ((join " ", @$picked)." ($hwhich of ".(scalar @$retrieve).")");
 }
 
 sub canonicalise {
     my ($self, $word) = @_;
+    confess "wtf?" if !defined $word;
     $word =~ s/[^a-zA-Z0-9]//g;
     return lc $word;
 }
