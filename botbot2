@@ -27,7 +27,8 @@ $VERSION = sprintf('%d.%02d', q$Revision: 1.27 $ =~ /(\d+)/g);
 $SIG{'ALRM'} = sub { die "Alarm Caught; login took too long"; };
 $SIG{'INT'}  = sub { die "Interrupt caught"; };
 
-daemonize("/tmp/$SELF.pid",1) if @ARGV && $ARGV[0] =~ /^-d|--daemon$/i;
+sleep(4) if @ARGV && grep(/^(-p|--pause)$/i,@ARGV);
+daemonize("/tmp/$SELF.pid",1) if @ARGV && grep(/^(-d|--daemon)$/i,@ARGV);
 chdir($Bin) || die "Unable to change directory to $Bin: $!";
 
 my ($basename, $dirname, $extension) = fileparse($0, '\.[^\.]+');

@@ -103,7 +103,7 @@ sub _random_query {
     my $picked = $retrieve->[$which];
     my $factid = shift @$picked;
     $dbh->do("update facts set lastsaid = ".time." where factid = ".$factid);
-    return ((join " ", @$picked)." ($hwhich of ".(scalar @$retrieve).")");
+    return ((join " ", @$picked)." ($hwhich of $howmany)");
 }
 
 sub canonicalise {
