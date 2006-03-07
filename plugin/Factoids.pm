@@ -23,7 +23,8 @@ sub handle {
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 	return if $self->{quiet};
 
-	if ($event->{text} =~ /^$self->{config}->{username}\s*,?\s+(shh+|quiet|shutup|shush|stfu)/i) {
+	if ($event->{text} =~ /^$self->{config}->{username}\s*,?\s+(s+h+|q+u+i+e+t+|s+h+u+t+u+p+|s+h+u+s+h+|stfu)/i ||
+		$event->{text} =~ /^\s*(s+h+|q+u+i+e+t+|s+h+u+t+u+p+|s+h+u+s+h+|stfu)\s*,?\s*$self->{config}->{username}/i) {
 		$self->{quiet} = 60;
 		return 0;
 	}
