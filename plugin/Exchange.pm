@@ -5,7 +5,7 @@ use Finance::Currency::Convert::XE;
 
 our $DESCRIPTION = 'Currency conversion module using XE.com\'s Universal Currency Converter';
 our %CMDHELP = (
-		'currencies' => 'List all the available currency codes'
+		'currencies' => 'List all the available currency codes',
 		'exchange <value> <source> <target>' => 'Convert <value> of <source> currency in to <target> currency',
 		'exchange <value> <source>' => 'Convert <value> of <source> currency in to GBP',
 		'exchange <source>' => 'Convert 1 <source> currency into GBP',

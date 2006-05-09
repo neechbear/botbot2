@@ -87,7 +87,7 @@ sub event_callback {
 					$plugin->log("$plugin took too long to complete; skipping");
 					die("$plugin took too long to complete; skipping");
 				};
-			alarm(7);
+			alarm(10);
 			my $response = $plugin->handle($event, \%plugins_responded);
 			$plugins_responded{ref($plugin)} = $response if $response;
 			alarm(0);
