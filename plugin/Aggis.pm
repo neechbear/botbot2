@@ -2,6 +2,11 @@ package plugin::Aggis;
 use base plugin;
 use strict;
 
+our $DESCRIPTION = 'Describe what the given aggregate means';
+our %CMDHELP = (
+		'aggis ip_prefix[/prefix_length]' => 'Return output of aggis -d -D -T ip_prefix[/prefix_length]',
+	);
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

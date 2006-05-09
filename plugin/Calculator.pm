@@ -2,6 +2,11 @@ package plugin::Calculator;
 use base plugin;
 use strict;
 
+our $DESCRIPTION = 'Very basic calculator';
+our %CMDHELP = (
+		'1+2' => 'Calculate the result of 1+2'
+	);
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

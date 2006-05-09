@@ -7,6 +7,9 @@ use URI::Escape;
 use Colloquy::Data qw(:all);
 
 our $DESCRIPTION = 'Return movie show times are local cinemas';
+our %CMDHELP = (
+		'cinema <movie title>, <location>' => 'List showing times of <movie> at <location>'
+	);
 
 sub handle {
 	my ($self,$event,$responded) = @_;

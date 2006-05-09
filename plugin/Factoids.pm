@@ -4,6 +4,12 @@ use strict;
 use FactStore;
 
 our $DESCRIPTION = 'InfoBot-like factoid plugin';
+our %CMDHELP = (
+		'X is Y' => 'Teach botbot that X is Y',
+		'X is also Z' => 'Teach botbot that X is also Y',
+		'X?' => 'Ask botbot what X is',
+		'no, X is A' => 'Tell botbot that X is A and to forget everything it previously knew about X'
+	);
 
 sub factstore {
   my $self = shift;

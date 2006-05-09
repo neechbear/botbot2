@@ -3,6 +3,7 @@ use base plugin;
 use strict;
 
 our $DESCRIPTION = 'Responds to rude words with cunty fliglets';
+our %CMDHELP = ();
 
 sub handle {
 	my ($self,$event,$responded) = @_;

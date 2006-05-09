@@ -2,6 +2,9 @@ package plugin::AutoListJoin;
 use base plugin;
 use strict;
 
+our $DESCRIPTION = 'Automatically join lists';
+our %CMDHELP = ();
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 

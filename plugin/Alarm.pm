@@ -3,6 +3,7 @@ use base plugin;
 use strict;
 
 our $DESCRIPTION = 'NOOP';
+our %CMDHELP = ();
 
 sub handle {
 	my ($self,$event,$responded) = @_;
