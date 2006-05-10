@@ -1,9 +1,11 @@
 package plugin::ListPlugins;
 use base plugin;
 use strict;
-use vars qw($DESCRIPTION);
 
-$DESCRIPTION = 'Returns a list of loaded botbot plugins';
+our $DESCRIPTION = 'Returns a list of loaded botbot plugins';
+our %CMDHELP = (
+		'list plugins' => 'Display a list of loaded plugins'
+	);
 
 sub handle {
 	my ($self,$event,$responded) = @_;

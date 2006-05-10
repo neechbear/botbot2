@@ -1,9 +1,9 @@
 package plugin::HelloWorld;
 use base plugin;
 use strict;
-use vars qw($DESCRIPTION);
 
-$DESCRIPTION = 'Say hello when greeted in private';
+our $DESCRIPTION = 'Say hello when greeted in private';
+our %CMDHELP = ();
 
 sub handle {
 	my ($self,$event,$responded) = @_;

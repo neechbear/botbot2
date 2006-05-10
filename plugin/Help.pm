@@ -24,7 +24,7 @@ sub handle {
 			}
 			return "Displayed help for all plugins";
 
-		} elsif (my ($plugin) = grep(/^(.*\/)?$type(\.pm)?$/i,keys(%INC))) {
+		} elsif (my ($plugin) = grep(/^(plugin\/)?$type(\.pm)?$/i,keys(%INC))) {
 			return unless $plugin;
 			plugin_help($self,$event,$plugin);
 			return "Displayed help for the $type plugin";

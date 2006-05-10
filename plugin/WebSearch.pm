@@ -4,28 +4,33 @@ use strict;
 use WWW::Search;
 use HTML::Strip;
 
-my $DESCRIPTION = 'Return the first Yahoo!, AltaVista, Lycos or HotBot search result';
+our $DESCRIPTION = 'Return the first Yahoo!, AltaVista, Lycos or HotBot search result';
+our %CMDHELP = ();
+
+our %plugin = (
+		yahoo       => 'Yahoo',
+		hotbot      => 'HotBot',
+		lycos       => 'Lycos',
+		altavista   => 'AltaVista',
+		ebay        => 'EbayUK',
+		crawler     => 'Crawler',
+		netfind     => 'NetFind',
+		metapedia   => 'Metapedia',
+		metacrawler => 'MetaCrawler',
+		hotfiles    => 'HotFiles',
+		fireball    => 'Fireball',
+		excite      => 'ExciteForWebServers',
+	);
+
+while (my ($k,$v) = each %plugin) {
+	$CMDHELP{"$k <search term>"} = "Display results from $v using <search term>";
+}
 
 sub handle {
 	my ($self,$event,$responded) = @_;
 
 	return if $event->{alarm};
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
-
-	my %plugin = (
-			yahoo       => 'Yahoo',
-			hotbot      => 'HotBot',
-			lycos       => 'Lycos',
-			altavista   => 'AltaVista',
-			ebay        => 'EbayUK',
-			crawler     => 'Crawler',
-			netfind     => 'NetFind',
-			metapedia   => 'Metapedia',
-			metacrawler => 'MetaCrawler',
-			hotfiles    => 'HotFiles',
-			fireball    => 'Fireball',
-			excite      => 'ExciteForWebServers',
-		);
 
 	my $commands = join('|',keys %plugin);
 	return unless $event->{command} =~ /^($commands)$/i;
