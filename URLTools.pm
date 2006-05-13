@@ -78,7 +78,7 @@ sub html2text {
 		$_ = HTML::Entities::decode($_);
 		s/\n/ /gs; s/\s\s+/ /g;
 	}
-	return @out;
+	return wantarray ? @out : "@out";
 }
 
 sub tinyURL {
