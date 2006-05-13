@@ -11,7 +11,7 @@ use Exporter;
 
 use vars qw(@ISA @EXPORT @EXPORT_OK);
 @ISA = qw(Exporter);
-@EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip UserAgent);
+@EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip UserAgent html2text);
 @EXPORT = @EXPORT_OK;
 
 sub getHtmlTitle {
@@ -26,12 +26,7 @@ sub getHtmlTitle {
 	if ($response->is_success) {
 		my $content = $response->content();
 		($title) = $content =~ /<title>(.*?)<\/title>/si;
-		if ($title) {
-			my $hs = HTML::Strip->new();
-			$title = $hs->parse($title);
-			$title = HTML::Entities::decode($title);
-			$title =~ s/\n/ /gs; $title =~ s/\s\s+/ /g;
-		}
+		$title = html2text($title) if $title;
 		if (!$title) {
 			eval {
 				my $info = Image::Info::image_info(\$content);
@@ -73,6 +68,17 @@ sub UserAgent {
 			timeout => 4,
 		);
 	return $ua;
+}
+
+sub html2text {
+	my @out = @_;
+	my $hs = HTML::Strip->new();
+	for (@out) {
+		$_ = $hs->parse($_);
+		$_ = HTML::Entities::decode($_);
+		s/\n/ /gs; s/\s\s+/ /g;
+	}
+	return @out;
 }
 
 sub tinyURL {

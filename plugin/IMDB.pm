@@ -5,6 +5,9 @@ use URLTools;
 use HTML::Strip;
 use LWP::UserAgent;
 
+our $DESCRIPTION = '';
+our %CMDHELP = ();
+
 sub handle {
 	my ($self,$event,$responded) = @_;
 
