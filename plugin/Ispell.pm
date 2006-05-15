@@ -1,12 +1,17 @@
 package plugin::Ispell;
 use base plugin;
 use strict;
-use Lingua::Ispell qw( :all );ingua::Ispell;
+use Text::Aspell;
 
-our $DESCRIPTION = 'Check work spelling with ISpell';
+our $DESCRIPTION = 'Check work spelling with ASpell';
 our %CMDHELP = (
-		'ispell <word>' => 'Returns spelling suggestions for <word>'
+		'aspell <word>' => 'Returns spelling suggestions for <word>'
 	);
+
+our $speller = Text::Aspell->new;
+die unless $speller;
+$speller->set_option('lang','en_US');
+$speller->set_option('sug-mode','fast');
 
 sub handle {
 	my ($self,$event,$responded) = @_;
@@ -16,15 +21,11 @@ sub handle {
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 	return 0 if grep(!/[a-zA-Z\-0-9]/,@{$event->{cmdargs}});
 
-	my @reply = ();
-	for my $r ( spellcheck( "@{$event->{cmdargs}}" ) ) {
-		push @reply, "$r->{'type'}: $r->{'term'}";
-	}
-
+	my @reply = $speller->suggest("@{$event->{cmdargs}}");
 	$self->{talker}->whisper(
 			($event->{list} ? $event->{list} : $event->{person}),
-			$_
-		) for @reply;
+			join(', ',$_)
+		) if @reply;
 	return "Suggested spellings for '@{$event->{cmdargs}}'" if @reply;
 
 	$self->{talker}->whisper(
