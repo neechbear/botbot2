@@ -24,7 +24,7 @@ sub handle {
 	my @reply = $speller->suggest("@{$event->{cmdargs}}");
 	$self->{talker}->whisper(
 			($event->{list} ? $event->{list} : $event->{person}),
-			join(', ',$_)
+			join(', ',@reply)
 		) if @reply;
 	return "Suggested spellings for '@{$event->{cmdargs}}'" if @reply;
 
