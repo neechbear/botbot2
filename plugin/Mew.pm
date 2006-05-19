@@ -7,8 +7,8 @@ sub handle {
 
 	return if $event->{alarm};
 	return undef unless int(rand(3)) == 2;
-	return unless $event->{command} =~ /^(m+e+o+w+s?\s*)+\b/i ||
-					$event->{command} =~ /^(m+e+o+w+s?\s*)+$/i;
+	return unless $event->{args}->[0] =~ /^(m+e+w+s*|m+e+o+w+s?\s*)+\b/i ||
+					$event->{args}->[0] =~ /^(m+e+w+s*|m+e+o+w+s?\s*)+$/i;
 
 	if (int(rand(3)) == 2) {
 		$self->{talker}->say(
