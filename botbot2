@@ -16,19 +16,25 @@ use Module::Pluggable(
 		instantiate => 'new',
 	);
 
-use Colloquy::Bot::Simple qw(daemonize);
+use Colloquy::Bot::Simple;
+use Proc::DaemonLite qw(:all);
 use File::Basename qw(fileparse);
 use Config::General qw();
 
 use vars qw($VERSION $SELF @PLUGIN_CACHE $LAST_LOADED);
 
 ($SELF = $0) =~ s|^.*/||;
-$VERSION = sprintf('%d.%02d', q$Revision: 1.27 $ =~ /(\d+)/g);
+$VERSION = sprintf('%d', q$Revision: 1.27 $ =~ /(\d+)/g);
+
 $SIG{'ALRM'} = sub { die "Alarm Caught; login took too long"; };
-$SIG{'INT'}  = sub { die "Interrupt caught"; };
+$SIG{'INT'} = sub { die "Interrupt caught"; };
+$SIG{'HUP'} = \&do_relaunch;
+
+$SIG{'__DIE__'} = \&log_die;
+$SIG{'__WARN__'} = \&log_warn;
 
 sleep(4) if @ARGV && grep(/^(-p|--pause)$/i,@ARGV);
-daemonize("/tmp/$SELF.pid",1) if @ARGV && grep(/^(-d|--daemon)$/i,@ARGV);
+init_server() if @ARGV && grep(/^(-d|--daemon)$/i,@ARGV);
 chdir($Bin) || die "Unable to change directory to $Bin: $!";
 
 my ($basename, $dirname, $extension) = fileparse($0, '\.[^\.]+');
@@ -132,4 +138,7 @@ sub load_plugins {
 	return @PLUGIN_CACHE;
 }
 
+1;
+
+__END__
 
