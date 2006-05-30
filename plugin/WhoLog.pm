@@ -5,13 +5,12 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	$self->{countdown} = 1 unless defined($self->{countdown});
+	$self->{'last_update'} = 0 unless defined($self->{'last_update'});
 
 	if ($event->{'msgtype'} eq 'ALRM') {
-		$self->{countdown} ||= 6;
-		$self->{countdown}--;
-		if ($self->{countdown} == 0) {
-			$self->{talker}->say('.who');
+		if (time() - $self->{'last_update'} > 60) {
+			$self->{'last_update'} = time();
+			$self->say('.who');
 		}
 
 	} elsif ($event->{msgtype} =~ /^WHO(HDR)?$/) {
