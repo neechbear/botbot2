@@ -55,6 +55,9 @@ sub process {
 			$event->{$_} = '' if !defined($event->{$_});
 		}
 
+		next if lc($event->{'person'}) eq ($config->{'username'})
+				|| $event->{'person'} =~ /bot$/i;
+
 		for my $plugin (sort(load_plugins($socket))) {
 			eval {
 				alarm(10);
