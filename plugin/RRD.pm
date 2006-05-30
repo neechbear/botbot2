@@ -69,18 +69,11 @@ sub handle {
 	}
 
 	if ($self->{lastchunk} ne $self->{chunk}) {
-
-		warn "\n";
-		warn "lastchunk ($self->{lastchunk}) ne chunk ($self->{chunk})\n";
-		use Data::Dumper;
-		warn Dumper($self->{counter});
-
 		eval {
 			$self->{rrd}->update($self->{rrdfile},$self->{chunk},
 					map { $_ => $self->{counter}->{$_} } keys %{$self->{counter}}
 				);
 		};
-
 		$self->{counter} = {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
 	}
 
