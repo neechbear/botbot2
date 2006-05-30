@@ -60,12 +60,11 @@ sub process {
 
 		for my $plugin (sort(load_plugins($socket))) {
 			eval {
-				alarm(10);
+				alarm(8);
 				local $SIG{'ALRM'} = sub { die("Timeout") };
 				my $rtn = $plugin->handle($event);
 				log_debug(ref($plugin) . ": $rtn") if $rtn && "$rtn" ne "1";
 			};
-			alarm(0);
 		}
 	}
 	Time::HiRes::alarm(1);
