@@ -22,7 +22,7 @@ sub handle {
 	}
 
 	my $fontdir = '/usr/share/figlet/';
-	my $cmd = "figlet -w 65 ";
+	my $cmd = "/usr/bin/figlet -w 65 ";
 	if ($event->{cmdargs}->[0] eq '-f' && -f "$fontdir/$event->{cmdargs}->[1].flf") {
 		$cmd .= " -f $event->{cmdargs}->[1].flf ";
 		shift @{$event->{cmdargs}};
