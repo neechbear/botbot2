@@ -56,8 +56,13 @@ sub process {
 		}
 
 		for my $plugin (sort(load_plugins($socket))) {
-			my $rtn = $plugin->handle($event);
-			log_debug(ref($plugin) . ": $rtn") if $rtn && "$rtn" ne "1";
+			eval {
+				alarm(10);
+				local $SIG{'ALRM'} = sub { die("Timeout") };
+				my $rtn = $plugin->handle($event);
+				log_debug(ref($plugin) . ": $rtn") if $rtn && "$rtn" ne "1";
+			};
+			alarm(0);
 		}
 	}
 	Time::HiRes::alarm(1);
