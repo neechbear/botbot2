@@ -36,7 +36,7 @@ sub handle {
 	}
 
 	(my $incoming = $event->{text}) =~ s/^\s+|\s+$//g;
-	$incoming =~ s/\s\s+/\s/g;
+	$incoming =~ s/\s\s+/ /g;
 	return if !$incoming;
 	my $i_say = $self->factstore->chat($incoming);
 	
