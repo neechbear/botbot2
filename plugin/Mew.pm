@@ -5,7 +5,7 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return undef unless int(rand(3)) == 2;
 	return unless $event->{args}->[0] =~ /^(p+u+r+s*|m+e+w+s*|m+e+o*w+s?\s*)+\b/i ||
 					$event->{args}->[0] =~ /^(p+u+r+s*|m+e+w+s*|m+e+o*w+s?\s*)+$/i;

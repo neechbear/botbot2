@@ -7,7 +7,7 @@ use LWP::Simple;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return unless $event->{command} =~ /^ontv$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 

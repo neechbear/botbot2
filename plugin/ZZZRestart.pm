@@ -5,7 +5,7 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return if $event->{msgtype} ne 'TELL';
 	return if $event->{command} !~ /^(restart|quit|shutdown|stop|die|exit|logout)$/i;
 	return unless $event->{person} =~ /^(neech2?|jen|heds|tims)$/i;

@@ -8,7 +8,7 @@ our %CMDHELP = ();
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return unless $event->{command} =~ /^(dict(ionary)?|define)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 

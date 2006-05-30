@@ -18,8 +18,8 @@ sub handle {
 	$self->{counter} ||= {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
 	$self->{alarmcounter} ||= 0;
 
-	$self->{alarmcounter}++ if $event->{alarm};
-	if ($event->{alarm} && $self->{alarmcounter} > 30) {
+	$self->{alarmcounter}++ if $event->{'alarm'};
+	if ($event->{'alarm'} && $self->{alarmcounter} > 30) {
 		$self->{rrd}->graph($self->{rrdfile},
 				destination => './data/',
 				title => 'Talker Activity',

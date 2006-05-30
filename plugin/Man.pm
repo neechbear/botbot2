@@ -6,7 +6,7 @@ use Colloquy::Data qw(:all);
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return unless $event->{command} =~ /^man$/i;
 	return unless $event->{msgtype} eq 'TELL';
 

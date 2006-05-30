@@ -7,7 +7,7 @@ sub handle {
 
 	$self->{countdown} = 1 unless defined($self->{countdown});
 
-	if ($event->{alarm}) {
+	if ($event->{'alarm'}) {
 		$self->{countdown} ||= 6;
 		$self->{countdown}--;
 		if ($self->{countdown} == 0) {

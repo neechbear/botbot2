@@ -9,7 +9,7 @@ our $DESCRIPTION = 'Return weather information from weather.com';
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{alarm};
+	return if $event->{'alarm'};
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 	return unless $event->{command} =~ /^(weather|forecast)$/i;
 

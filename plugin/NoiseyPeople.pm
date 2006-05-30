@@ -10,7 +10,7 @@ sub handle {
 	$self->{counter}->{$event->{person}} = 0
 			unless defined($self->{counter}->{$event->{person}});
 
-	if ($event->{alarm}) {
+	if ($event->{'alarm'}) {
 		$self->{counter}->{$event->{person}}--
 			unless $self->{counter}->{$event->{person}} == 0;
 	}

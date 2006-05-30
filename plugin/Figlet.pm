@@ -7,7 +7,7 @@ our $DESCRIPTION = 'Figlets words';
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	if ($event->{alarm} && defined($self->{quiet})) {
+	if ($event->{'alarm'} && defined($self->{quiet})) {
 		$self->{quiet}-- if $self->{quiet};
 		return 0;
 	}
