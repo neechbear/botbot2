@@ -8,7 +8,7 @@ our %CMDHELP = ();
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{command} =~ /wassup|yo|hi'?ya|hi|hello/i;
 	return unless $event->{msgtype} eq 'TELL';
 

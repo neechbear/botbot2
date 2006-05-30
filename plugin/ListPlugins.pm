@@ -10,7 +10,7 @@ our %CMDHELP = (
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 	return unless $event->{text} =~ /^list\s*plugins?\s*$/i;
 

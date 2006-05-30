@@ -7,7 +7,7 @@ our %CMDHELP = ();
 
 sub handle {
 	my ($self,$event,$responded) = @_;
-	if ($event->{'alarm'}) {
+	if ($event->{'msgtype'} eq 'ALRM') {
 		# I'm not actually doing anything really
 		#warn "ALARM\n";
 		#use Data::Dumper;

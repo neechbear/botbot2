@@ -29,7 +29,7 @@ while (my ($k,$v) = each %plugin) {
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 
 	my $commands = join('|',keys %plugin);

@@ -10,7 +10,7 @@ sub handle {
 
 	$self->{countdown} = 1 unless defined($self->{countdown});
 
-	if ($event->{'alarm'}) {
+	if ($event->{'msgtype'} eq 'ALRM') {
 		$self->{countdown} ||= 100;
 		$self->{countdown}--;
 		if ($self->{countdown} == 0) {

@@ -8,7 +8,7 @@ our $DESCRIPTION = 'Perform a traceroute to a remote host';
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{command} =~ /^(traceroute|tracert)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|TELL|LISTTALK$/;
 

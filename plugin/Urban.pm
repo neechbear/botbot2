@@ -7,7 +7,7 @@ sub handle {
 	my ($self,$event,$responded) = @_;
 	my $talker = $self->{talker};
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return 0 unless $event->{command} =~ /^urban$/i;
 
 	my $key = 'e1022d9e0af608374a5c88f5e0f379c5';

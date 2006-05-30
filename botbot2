@@ -40,7 +40,7 @@ my $socket = connect_to_talker($config->{host},$config->{port});
 
 $SIG{'ALRM'} = \&process;
 process($_) while local $_ = <$socket>;
-$socket->shutdown;
+#$socket->shutdown();
 kill_children() if keys %CHILDREN;
 
 exit;
@@ -49,12 +49,17 @@ sub process {
 	Time::HiRes::alarm(0);
 	for (@_) {
 		my $event = Parse::Colloquy::Bot::parse_line($_);
+
 		$event->{'alarm'} = 1 if $event->{msgtype} eq 'ALRM';
+		for (keys %{$event}) {
+			$event->{$_} = '' if !defined($event->{$_});
+		}
+
 		for my $plugin (sort(load_plugins($socket))) {
 			$plugin->handle($event);
 		}
 	}
-	Time::HiRes::alarm(1.0);
+	Time::HiRes::alarm(1);
 }
 
 sub do_term {

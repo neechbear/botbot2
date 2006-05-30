@@ -8,7 +8,7 @@ our %CMDHELP = ();
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return undef unless int(rand(2)) == 1;
 
 	my @words = qw(beaver clit cock cooter cornhole cunt

@@ -64,7 +64,7 @@ sub log {
 	my $fh = FileHandle->new(">>$self->{logfile}");
 	if (defined $fh) {
 		my $str = "@_"; chomp $str;
-		printf($fh,"[%s] %s\n",strftime('%Y-%m-%d %H-%M-%S',localtime), $str);
+		printf $fh "[%s] %s\n",strftime('%Y-%m-%d %H-%M-%S',localtime), $str;
 		$fh->close;
 	} else {
 		log_warn("Unable to open logfile $self->{logfile} for writing: $!");

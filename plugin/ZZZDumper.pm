@@ -5,7 +5,7 @@ use Data::Dumper;
 
 sub handle {
 	my ($self,$event,$responded) = @_;
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return if $event->{msgtype} =~ /^DONE/;
 
 	if ($event->{msgtype} eq 'TELL' && $event->{command} eq 'debug' &&

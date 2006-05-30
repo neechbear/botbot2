@@ -4,7 +4,7 @@ use strict;
 
 sub handle {
 	my ($self,$event,$responded) = @_;
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 
 	$self->log($event->{raw});
 

@@ -16,7 +16,7 @@ $speller->set_option('sug-mode','fast');
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{command} =~ /^([ai]?spell(ing)?)$/i;
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 	return 0 if grep(!/[a-zA-Z\-0-9]/,@{$event->{cmdargs}});

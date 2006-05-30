@@ -14,7 +14,7 @@ our %CMDHELP = (
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|TALK|LISTTALK|TELL$/;
 	return unless $event->{command} =~ /^(cinema)$/i;
 

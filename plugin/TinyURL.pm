@@ -8,7 +8,7 @@ our $DESCRIPTION = "Shortens URLs to 'TinyURL's and displays web site titles";
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	return if $event->{'alarm'};
+	return if $event->{'msgtype'} eq 'ALRM';
 	return unless $event->{msgtype} =~ /^OBSERVE TALK|OBSERVE EMOTE|EMOTE|TALK|TELL|LISTEMOTE|LISTTALK$/;
 	return unless ($event->{text} =~ /https?:\/\/\S+/i || $event->{text} =~ /\bwww\.\S+/i);
 
