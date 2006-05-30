@@ -57,7 +57,7 @@ sub process {
 
 		for my $plugin (sort(load_plugins($socket))) {
 			my $rtn = $plugin->handle($event);
-			log_debug("$plugin: $rtn") if $rtn && "$rtn" ne "1";
+			log_debug(ref($plugin) . ": $rtn") if $rtn && "$rtn" ne "1";
 		}
 	}
 	Time::HiRes::alarm(1);
