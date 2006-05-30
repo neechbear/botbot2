@@ -14,7 +14,10 @@ sub handle {
 			$self->{config}->{password}
 		)) if $event->{msgtype} eq 'HELLO' && !$self->{logged_in};
 
-	$self->{logged_in} = 1 if $event->{msgtype} =~ /^DONE|COMMENT$/;
+	if ($event->{msgtype} =~ /^DONE|COMMENT$/ && !$self->{logged_in}) {
+		$self->{logged_in} = 1;
+		$self->say(".observe Public");
+	}
 }
 
 1;
