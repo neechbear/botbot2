@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in botbot2 `find . | egrep "\.p(l|m)$"`
+for i in botbot2 `find . | egrep "\.p(l|m)$" | sort`
 do
 	perl -Ilib -c $i
 done

@@ -6,6 +6,7 @@ use HTML::Entities;
 use HTML::Strip;
 use Image::Info;
 use File::Type;
+use Tie::TinyURL "0.02";
 use Socket;
 use Exporter;
 
@@ -13,6 +14,9 @@ use vars qw(@ISA @EXPORT @EXPORT_OK);
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(getHtmlTitle tinyURL isIP resolve ip2host host2ip UserAgent html2text);
 @EXPORT = @EXPORT_OK;
+
+my %tinyurl = ();
+tie %tinyurl, 'Tie::TinyURL', 'timeout' => 4;
 
 sub getHtmlTitle {
 	my $url = shift || undef;
@@ -83,20 +87,9 @@ sub html2text {
 
 sub tinyURL {
 	my $url = shift || undef;
-	return undef unless defined $url;
-
-	my $ua = UserAgent();
-
-	my $shorturl = $url;
-	unless ($shorturl =~ m#^https?://(tinyurl\.com|shrunk\.net)/[\w\d]+/?#i) {
-		my $response = $ua->get("http://tinyurl.com/create.php?url=$url");
-		return undef unless $response->is_success;
-		if ($response->content =~ m|<input type=hidden name=tinyurl value="(http://tinyurl.com/[a-zA-Z0-9]+)">|) {
-			$shorturl = $1;
-		}
-	}
-
-	return $shorturl;
+	return $url if !defined($url) ||
+		$url =~ m#^https?://(www\.)?tinyurl\.com/[\w\d]+#i;
+	return $tinyurl{$url};
 }
 
 sub ip2host {
