@@ -2,33 +2,50 @@ package plugin::RRD;
 use base plugin;
 use strict;
 use integer;
-use RRD::Simple 1.32;
+
+use RRD::Simple 1.34;
+use RRDs;
+$RRD::Simple::DEFAULT_DSTYPE = 'DERIVE';
 
 our $DESCRIPTION = 'Log talker usage statistics to an RRD file';
 
 sub handle {
 	my ($self,$event,$responded) = @_;
 
-	$self->{chunk} = (time()/60)*60;
-	$self->{lastchunk} ||= $self->{chunk};
-
 	$self->{rrdfile} ||= './data/activity.rrd';
 	$self->{rrd} ||= new RRD::Simple;
-
 	$self->{counter} ||= {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
 	$self->{alarmcounter} ||= 0;
-
 	$self->{alarmcounter}++ if $event->{'msgtype'} eq 'ALRM';
+
 	if ($event->{'msgtype'} eq 'ALRM' && $self->{alarmcounter} > 30) {
+		$self->{alarmcounter} = 0;
+
+		eval {
+			unless (-f $self->{rrdfile}) {
+				$self->{rrd}->create($self->{rrdfile},
+					GROUP   => 'DERIVE',
+					PRIVATE => 'DERIVE',
+					LIST    => 'DERIVE',
+					SHOUT   => 'DERIVE',
+				);
+				RRDs::tune($self->{rrdfile},'-i',"$_:0") for
+					$self->{rrd}->sources($self->{rrdfile});
+			} else {
+				$self->{rrd}->update($self->{rrdfile}, %{$self->{counter}});
+			}
+
 		$self->{rrd}->graph($self->{rrdfile},
+#				width => 560,
+#				slope_mode => undef,
+#				interlaced => undef,
 				destination => './data/',
 				title => 'Talker Activity',
-				width => 560,
-				vertical_label => 'Messages per minute',
-#				slope_mode => undef,
+				vertical_label => 'Messages',
 				units_exponent => 0,
-#				interlaced => undef,
 				line_thickness => 1,
+				sources => [ qw(GROUP LIST PRIVATE SHOUT) ],
+				source_drawtypes => [ qw(AREA STACK STACK STACK) ],
 				source_labels => {
 						GROUP => '@Public',
 						SHOUT => '!shouts',
@@ -50,34 +67,13 @@ sub handle {
 						'MGRID#67C6DE',
 					) ],
 			) if -f $self->{rrdfile};
-		$self->{alarmcounter} = 0;
+		};
 	}
 
-	return unless $event->{msgtype} =~ /^(OBSERVE|TALK|TELL|SHOUT|LIST)/;
 	$self->{counter}->{GROUP}++   if $event->{msgtype} =~ /^(OBSERVE|TALK)/;
 	$self->{counter}->{PRIVATE}++ if $event->{msgtype} eq 'TELL';
-	$self->{counter}->{LIST}++    if $event->{msgtype} =~ /^LIST/;
+	$self->{counter}->{LIST}++    if $event->{msgtype} =~ /^LIST(TALK|EMOTE)/;
 	$self->{counter}->{SHOUT}++   if $event->{msgtype} eq 'SHOUT';
-
-	unless (-f $self->{rrdfile}) {
-		$self->{rrd}->create($self->{rrdfile},
-				GROUP   => 'GAUGE',
-				PRIVATE => 'GAUGE',
-				LIST    => 'GAUGE',
-				SHOUT   => 'GAUGE',
-			);
-	}
-
-	if ($self->{lastchunk} ne $self->{chunk}) {
-		eval {
-			$self->{rrd}->update($self->{rrdfile},$self->{chunk},
-					map { $_ => $self->{counter}->{$_} } keys %{$self->{counter}}
-				);
-		};
-		$self->{counter} = {GROUP => 0, PRIVATE => 0, SHOUT => 0, LIST => 0};
-	}
-
-	$self->{lastchunk} = $self->{chunk};
 
 	return 0;
 }
