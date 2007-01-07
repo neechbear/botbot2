@@ -52,7 +52,7 @@ sub handle {
 		$self->{talker}->whisper(
 				($event->{list} ? $event->{list} : $event->{person}),
 				$responses[rand(@responses)],
-			) for split(/\n/,$output);
+			);
 		return 0;
 	}
 
