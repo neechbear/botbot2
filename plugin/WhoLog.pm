@@ -5,6 +5,8 @@ use strict;
 sub handle {
 	my ($self,$event,$responded) = @_;
 
+	return;
+
 	$self->{'last_update'} = 0 unless defined($self->{'last_update'});
 
 	if ($event->{'msgtype'} eq 'ALRM') {

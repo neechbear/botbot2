@@ -8,6 +8,9 @@ our %CMDHELP = ();
 sub handle {
 	my ($self,$event) = @_;
 
+	if ($event->{msgtype} eq 'HELLO') {
+		warn $event->{msgtype};
+	}
 	$self->say(sprintf('%s%s %s',
 			($self->{config}->{force_login} ? '*' : ''),
 			$self->{config}->{username},
